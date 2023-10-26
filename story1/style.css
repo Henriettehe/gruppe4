@@ -88,10 +88,15 @@ header a {
     align-self: center;
 }
 
+.flag{
+    max-width: 50%;
+}
+
 .flag-container {
   background-size: contain;
   background-position: 50%;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat; 
+}
 
 
 @media only screen and (min-width: 400px) {
