@@ -6,6 +6,10 @@ html {
     scroll-behavior: smooth;
 }
 
+img{
+    max-width: 10%;
+}
+
 header{
     width: 100vw;
     height: 100vh;
@@ -84,7 +88,7 @@ header a {
     align-self: center;
 }
 
-.flag-icon-background, .flag-icon {
+.flag-container {
   background-size: contain;
   background-position: 50%;
   background-repeat: no-repeat; }

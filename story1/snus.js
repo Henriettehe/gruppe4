@@ -1,13 +1,13 @@
 // Kilder: https://www.chartjs.org/docs/latest/getting-started/ 
 
-const ctx = document.getElementById('myChart');
+const ctx = document.getElementById('mychart').getContext('2d');
 
   new Chart(ctx, {
     type: 'bar',
     data: {
-      labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+      labels: ['Norge', 'Svergie', 'Danmark', 'Finland',],
       datasets: [{
-        label: '# of Votes',
+        label: '# hvem snuser mest?',
         data: [12, 19, 3, 5, 2, 3],
         borderWidth: 1
       }]

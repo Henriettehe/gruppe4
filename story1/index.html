@@ -8,7 +8,7 @@
         ">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="style.css" media="all">
-        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> 
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
         <!---Kopierer denne inn, for å få sånne kule visuelle charts. Hentet fra cdnj-->
     </head>
@@ -17,7 +17,7 @@
             <div>
                 <h1>Snusstopp: Skandinavere sier farvel til nikotinboksen</h1>
                 <a href="#introduction">Start the story</a>
-                <a href="#winners">Skip to winners!</a>
+                <a href="#skipToChart">Skip til hvilke skandinaviske land som topper listen!</a>
                 <a href="#bigmap">See the map, over championsships</a>
             </div>
         </header>
@@ -28,15 +28,33 @@
             <div class="scroll-text"><p><strong>Michael Schumacher </strong><span class="flag-icon flag-icon-deu"></span> Total wins: 91<img src="https://www.nzherald.co.nz/resizer/kyI5C2U5I5X9jZZFhy-V9URGh4c=/576x613/smart/filters:quality(70)/cloudfront-ap-southeast-2.images.arcpublishing.com/nzme/YKULX7N2DXK2VYI4QLOSJEHHXE.jpg"></p></div>
             <div class="scroll-text"><p><strong>Sebastian Vettel </strong><span class="flag-icon flag-icon-deu"></span> Total wins: 53<img src="https://www.autocar.co.uk/sites/autocar.co.uk/files/styles/gallery_slide/public/images/car-reviews/first-drives/legacy/vettel_0.jpg?itok=CxLySPT-"></p></div>
         </section>       
-        <section class="text-section" id="winners">
+        <section class="text-section" id="skipToChart">
             <h2>These are the formula 1 champions: </h2>
-            <div style="min-height:433px"><script type="text/javascript" defer src="https://datawrapper.dwcdn.net/PM9Td/embed.js?v=1" charset="utf-8"></script><noscript><img src="https://datawrapper.dwcdn.net/PM9Td/full.png" alt="" /></noscript></div>
+            <canvas width="600" id="mychart"></canvas>
         </section>
         <section class="text-section" id="bigmap">
             <h2>Here is a map over where the championsships where: </h2>
+            <div class="flag-container">
+                <div class="flag">
+                    <img src="flags/norge.svg" alt="Norwegian Flag">
+                    <span>Norge</span>
+                </div>
+                <div class="flag">
+                    <img src="sweden.svg" alt="Swedish Flag">
+                    <span>Sverige</span>
+                </div>
+                <div class="flag">
+                    <img src="denmark.svg" alt="Danish Flag">
+                    <span>Danmark</span>
+                </div>
+                <div class="flag">
+                    <img src="finland.svg" alt="Finnish Flag">
+                    <span>Finland</span>
+                </div>
+            </div>
             <button id="map-btn"><a href="map.html">Here is the map </a></button>
         </section>
         </div>
     </section>
-    <script></script>
+    <script src="snus.js"></script>
 </html>
