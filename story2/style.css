@@ -1,0 +1,99 @@
+*{
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+header{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("https://images.unsplash.com/photo-1609013304225-26a1b84ac180?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2072&q=80");
+    background-size: cover;
+    background-position: center center;
+}
+
+h1{
+    font-size: 3rem;
+    color: #fff;
+    text-shadow: 2px 2px 2px #000;
+}
+
+header a {
+    background-color: #000;
+    color: #fff;
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 1rem;
+    justify-self: center;
+}
+
+.scroll-container{
+    width: 100vw;
+    min-height: 60vh;
+    overflow: hidden; 
+    transition: background-image 1s; /* Bygd inn fade-in fade out */
+}
+
+.scroll-text{
+    /* for å få denne til å scrolles, må må den ha avstan mellom elementene + sette max-widde 50 bokstaver 
+    Auto er for sidene. Mens resten er oppe og nede vh */
+    margin: 50vh auto; 
+    max-width: 50rem; 
+    padding: 1rem;
+    background: rgba(255, 255, 255, 0.8);
+    color: #000;
+}
+
+.scroll-text img {
+    display: flex;
+    max-width: 500px;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#introduction{
+    background-image: url("./img/IMG_20231019_171049.jpg");
+    background-attachment: fixed; /* Med denne, blir backgrunnsbilde stående */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.text-section{
+    min-width: 50rem;
+    margin: 0 auto;
+    /* Disse to verdiene, block og both. Gjør at ingenting kan være ved siden av.*/
+    display: block;
+    clear: both;
+    font-size: calc(2rem - 2px);
+    display: flex;
+    flex-direction: column;
+}
+
+#map-btn{
+    max-width: 10%;
+    padding: 1rem;
+    text-decoration: none;
+    margin: 1rem;
+    align-self: center;
+}
+
+.flag-icon-background, .flag-icon {
+  background-size: contain;
+  background-position: 50%;
+  background-repeat: no-repeat; }
+
+
+@media only screen and (min-width: 400px) {
+    body{
+        
+    }
+    #introduction{
+    }
+}            
