@@ -89,8 +89,9 @@ header a {
     align-self: center;
 }
 
-.flag{
-    max-width: 50%;
+.flag {
+    height: 20px;
+    margin-right: 10px;
 }
 
 #mychart {

@@ -6,14 +6,14 @@ const ctx = document.getElementById('mychart').getContext('2d');
 
 // Replace this data with your actual dataset
 const data = {
-  labels: ['Norge', 'Svergie', 'Danmark', 'Finland'],
+  labels: ['Norge', 'Svergie', 'Danmark'],
   datasets: [
     {
       label: '# hvem snuser mest?',
       data: [12, 19, 3, 5],
       borderWidth: 1,
       backgroundColor: [
-        '/flags/norge.svg',
+        'rgb(200, 205, 86)',
         'rgb(54, 162, 235)',
         'rgb(255, 205, 86)'
       ],
