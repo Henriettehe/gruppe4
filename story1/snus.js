@@ -45,6 +45,7 @@ new Chart(ctx, {
         beginAtZero: true,
       },
     },
+
     plugins: {
       legend: {
         display: false,
@@ -57,6 +58,9 @@ new Chart(ctx, {
         },
       },
     },
+    layout: {
+      padding: 25
+  }
   },
   plugins: {
     beforeInit: (chart) => {
