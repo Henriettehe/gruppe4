@@ -1,7 +1,6 @@
 // Kilder: https://www.chartjs.org/docs/latest/getting-started/ 
 // For padding: https://www.chartjs.org/docs/latest/general/padding.html 
 
-// your-chart-data.js
 const ctx = document.getElementById('mychart').getContext('2d');
 
 // Replace this data with your actual dataset
