@@ -1,4 +1,3 @@
-// your-chart-data.js
 const ctx = document.getElementById('mestSnus').getContext('2d');
 
 const labels = Utils.months({count: 7});
