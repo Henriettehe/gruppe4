@@ -17,7 +17,6 @@ const data = {
         'rgb(54, 162, 235)',
         'rgb(255, 205, 86)'
       ],
-      hoverOffset: 4
     },
   ],
 };
@@ -60,7 +59,8 @@ new Chart(ctx, {
       },
     },
     layout: {
-      padding: 25
+      padding: 25, 
+      hoverOffset: 4,
   }
   },
   plugins: {
