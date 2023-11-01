@@ -3,3 +3,9 @@
 @import url('https://fonts.googleapis.com/css?family=Droid+Serif|Open+Sans:400,700'); // custom font
 
 @import 'colors.scss'; 
+
+* {
+  html {
+    font-size: calc(1em + 1vw);
+    }    
+}
