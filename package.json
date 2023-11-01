@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "codyframe": "^4.0.8",
     "sass": "^1.69.3"
   },
   "scripts": {
