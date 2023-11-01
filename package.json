@@ -4,6 +4,6 @@
     "sass": "^1.69.3"
   },
   "scripts": {
-    "compile-scss": "sass style.scss css/style.css"
+    "compile-scss": "sass long-story/assets/css/style.scss long-story/assets/css/style.css"
   }
 }
