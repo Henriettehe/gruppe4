@@ -12,20 +12,20 @@
         <!---Kopierer denne inn, for å få sånne kule visuelle charts. Hentet fra cdnj-->
     </head>
     <body>
-        <header>
-            <div>
+        <header role="banner">
+            <nav>
                 <h1>Snusstopp: Skandinavere sier farvel til nikotinboksen</h1>
                 <a href="#introduction">Tall fra forskning</a>
                 <a href="#skipToChart">Skip til hvilke skandinaviske land som topper listen!</a>
                 <a href="#mestsnus">Hvilket land snuser mest?</a>
-            </div>
+            </nav>
         </header>
         <section class="scroll-container" id="introduction">
             <div class="scroll-text"><p>The kings of the Formula1</p></div>
             <!---Dynamisk verdi? for å putte inn vinnere? + image. For nå ble det ulike flag :) -->
-            <div class="scroll-text"><p><strong>Lewis Hamilton <span class="flag-icon flag-icon-gbr"></span></strong> Total wins: 103<img src="https://media.formula1.com/content/dam/fom-website/drivers/2023Drivers/hamilton.jpg.img.1536.high.jpg"></p></div>
-            <div class="scroll-text"><p><strong>Michael Schumacher </strong><span class="flag-icon flag-icon-deu"></span> Total wins: 91<img src="https://www.nzherald.co.nz/resizer/kyI5C2U5I5X9jZZFhy-V9URGh4c=/576x613/smart/filters:quality(70)/cloudfront-ap-southeast-2.images.arcpublishing.com/nzme/YKULX7N2DXK2VYI4QLOSJEHHXE.jpg"></p></div>
-            <div class="scroll-text"><p><strong>Sebastian Vettel </strong><span class="flag-icon flag-icon-deu"></span> Total wins: 53<img src="https://www.autocar.co.uk/sites/autocar.co.uk/files/styles/gallery_slide/public/images/car-reviews/first-drives/legacy/vettel_0.jpg?itok=CxLySPT-"></p></div>
+            <div class="scroll-text"><p><strong>Lewis Hamilton <span class="flag-icon flag-icon-gbr"></span></strong> Total wins: 103<img src="https://media.formula1.com/content/dam/fom-website/drivers/2023Drivers/hamilton.jpg.img.1536.high.jpg" alt="Lewis Hamilton"></p></div>
+            <div class="scroll-text"><p><strong>Michael Schumacher </strong><span class="flag-icon flag-icon-deu"></span> Total wins: 91<img src="https://www.nzherald.co.nz/resizer/kyI5C2U5I5X9jZZFhy-V9URGh4c=/576x613/smart/filters:quality(70)/cloudfront-ap-southeast-2.images.arcpublishing.com/nzme/YKULX7N2DXK2VYI4QLOSJEHHXE.jpg" alt="Michael"></p></div>
+            <div class="scroll-text"><p><strong>Sebastian Vettel </strong><span class="flag-icon flag-icon-deu"></span> Total wins: 53<img src="https://www.autocar.co.uk/sites/autocar.co.uk/files/styles/gallery_slide/public/images/car-reviews/first-drives/legacy/vettel_0.jpg?itok=CxLySPT-" alt="Sebastian"></p></div>
         </section>       
         <section class="text-section" id="skipToChart">
             <h2>Hvem snuser mest av de skandinaviske landene?</h2> <!---Vurdere mer fengende h-tags -->
@@ -51,16 +51,14 @@
                     <span>Danmark</span>
                 </div>
                 <div class="flag">
-                    <img src="finland.svg" alt="Finnish Flag">
+                    <img src="finland.svg" alt="Finnish Flag" >
                     <span>Finland</span>
                 </div>
             </div>
             -->
            
-            <button id="map-btn"><a href="map.html">Here is the map </a></button>
+            <button id="map-btn" role="button">Here is the map</button>
         </section>
-        </div>
-    </section>
     <script src="snus.js"></script>
     <script src="swe-norw.js"></script>
 </html>
