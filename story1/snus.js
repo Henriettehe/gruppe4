@@ -5,11 +5,11 @@ const ctx = document.getElementById('mychart').getContext('2d');
 
 // Replace this data with your actual dataset
 const data = {
-  labels: ['Norge', 'Svergie', 'Danmark'],
+  labels: ['Norge', 'Svergie', 'Danmark', 'Finland' ,'Island'],
   datasets: [
     {
-      label: '# hvem snuser mest?',
-      data: [12, 19, 3, 5],
+      label: '% prosentvis hvem snuser mest?',
+      data: [22, 21, 16, 13, 4],
       borderWidth: 1,
       backgroundColor: [
         'rgb(200, 205, 86)',
@@ -18,21 +18,6 @@ const data = {
       ],
     },
   ],
-};
-
-// Function to create image pattern objects from SVG or PNG images
-const createImagePattern = (imagePath) => {
-  const img = new Image();
-  img.src = imagePath;
-  return ctx.createPattern(img, 'repeat');
-};
-
-// Map country names to their respective flag images
-const flagImages = {
-  Norge: createImagePattern('norge.svg'),
-  //Svergie: createImagePattern('sweden.svg'),
-  //Danmark: createImagePattern('denmark.svg'),
-  //Finland: createImagePattern('finland.svg'),
 };
 
 new Chart(ctx, {
