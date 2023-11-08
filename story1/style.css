@@ -17,7 +17,7 @@ header{
     justify-content: center;
     align-items: center;
     /* Husk å endre bakgrunn, også kan gjenbruke denne headeren lenger ned? */ 
-    background-image: url("https://cdn.coolstuff.com/pub_images/original/15919_01.jpg?method=crop&type=auto&width=1200&height=630");
+    background-image: url("img/island-natur.jpg");
     background-size: cover;
     background-position: center center;
 }
