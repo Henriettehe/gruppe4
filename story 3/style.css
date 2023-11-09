@@ -10,5 +10,8 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: ("img/ted-johnsson-h2P_QmHvL-Y-unsplash.jpg"");
+    background-image: url("img/ted-johnsson-h2P_QmHvL-Y-unsplash.jpg");
+    background-size: cover;
+    background-position: center center;
 }
+
