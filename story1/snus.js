@@ -14,6 +14,7 @@ const data = {
       backgroundColor: [
         'rgb(200, 205, 86)',
         'rgb(54, 162, 235)',
+        'rgb(255, 205, 86)',
         'rgb(255, 205, 86)'
       ],
     },
