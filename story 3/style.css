@@ -4,7 +4,7 @@ html {
     scroll-behaviour: smooth;
 }
 
-header {
+head {
     width: 100vw;
     height: 100vh;
     display: flex;
@@ -15,3 +15,13 @@ header {
     background-position: center center;
 }
 
+.fade-in-text {
+    font-family: Arial;
+    font-size: 150px
+    animation: fadeIn 6s;
+}
+
+@keyframes fadeIn {
+    0% {opacity: 0; }
+    100% {opacity: 1;}
+}
