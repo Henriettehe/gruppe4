@@ -4,7 +4,8 @@ Eksamen_kommunikasjonsdesign
 
 ## Story 1
 
-Handler om ..
+Nyhetssaken handler fremviser noe snusstatestikk, og prosentvis hvilke skandinaviske land som snuser mest og minst.
+Les videre for å finne ut hvilke land som snus ...
 
 ## Story 2
 

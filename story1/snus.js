@@ -9,16 +9,20 @@ const data = {
   datasets: [
     {
       label: '% prosentvis hvem snuser mest?',
-      data: [22, 21, 16, 13, 4],
+      data: [7, 6, 23, 12, 9],
       borderWidth: 1,
       backgroundColor: [
         'rgb(200, 205, 86)',
         'rgb(54, 162, 235)',
+        'rgb(255, 205, 86)',
         'rgb(255, 205, 86)'
       ],
     },
   ],
 };
+
+//Kilde: https://unric.org/no/stadig-faerre-royker-i-norden/  
+//for data om hvilke land som snuser prosentvis mest og minst. 
 
 new Chart(ctx, {
   type: 'bar',
