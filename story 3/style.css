@@ -1,7 +1,9 @@
-
+* {
+    box-sizing: border-box;
+}
 
 html {
-    scroll-behaviour: smooth;
+    scroll-behavior: smooth;
 }
 
 head {
@@ -24,4 +26,19 @@ head {
 @keyframes fadeIn {
     0% {opacity: 0; }
     100% {opacity: 1;}
+}
+
+.scroll-container {
+    width: 100vw;
+    min-height: 60vh;
+    overflow: hidden;
+    transition: background image 1s;
+}
+
+.scroll-text {
+    margin: 50 vh auto;
+    max-width: 50 rem;
+    padding: 1 rem;
+    background: 
+    color:
 }
