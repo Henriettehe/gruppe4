@@ -12,7 +12,7 @@ img{
 
 header{
     width: 100vw;
-    height: 100vh;
+    height: 180vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -20,6 +20,11 @@ header{
     background-image: url("img/island-natur.jpg");
     background-size: cover;
     background-position: center center;
+}
+
+nav{
+    display: grid;
+    gap: 1rem;
 }
 
 h1{
