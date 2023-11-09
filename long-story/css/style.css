@@ -1,6 +1,18 @@
  /* Parallax base styles
   --------------------------------------------- */
 
+
+  /* Lagt inn klassen, og endret på teksten for første header */
+  .title{
+    font-size: 8rem;
+    text-shadow: #000;
+    color: #fff; 
+    font-weight: bolder;
+    /* Text-tranform/animate for en kul effekt */ 
+  }
+
+  
+
   .parallax {
     height: 500px; /* fallback for older browsers */
     height: 100vh;
