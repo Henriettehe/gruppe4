@@ -51,17 +51,23 @@ header a {
     transition: background-image 1s; /* Bygd inn fade-in fade out */
 }
 
+h2 .scroll-text{ /* Endre på størrelsen, vil ikke ha alle lik padding. Kun de små*/ 
+    padding: 2rem; 
+}
+
 .scroll-text{
     /* for å få denne til å scrolles, må må den ha avstand mellom elementene + sette max-widde 50 bokstaver 
     Auto er for sidene. Mens resten er oppe og nede vh */
-    margin: 50vh auto; 
-    max-width: 50rem; 
-    padding: 1rem;
+    margin: 60vh auto; 
+    max-width: 40rem; 
+    padding: 8rem; 
     background: rgba(255, 255, 255, 0.8);
     color: #000;
+    font-weight: bold;
+    background-color: rgba(255, 255, 255, 0.8); /* Må finne ut hvordan få hvit boks bak for økt lesbarhet og fjerne de hvite kantene. */ 
 }
 
-p{
+.scroll-container .scroll-text{
     background-repeat: no-repeat;
     background-position: center;
     width: 100%;
