@@ -96,10 +96,10 @@ header a {
     align-self: center;
 }
 
-.flag {
+/* .flag {
     height: 20px;
     margin-right: 10px;
-}
+} */
 
 #mychart {
   background-size: contain;
