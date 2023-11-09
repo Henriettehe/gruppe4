@@ -1,0 +1,27 @@
+
+
+html {
+    scroll-behaviour: smooth;
+}
+
+head {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("img/ted-johnsson-h2P_QmHvL-Y-unsplash.jpg");
+    background-size: cover;
+    background-position: center center;
+}
+
+.fade-in-text {
+    font-family: Arial;
+    font-size: 150px
+    animation: fadeIn 6s;
+}
+
+@keyframes fadeIn {
+    0% {opacity: 0; }
+    100% {opacity: 1;}
+}
