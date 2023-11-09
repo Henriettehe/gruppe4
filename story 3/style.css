@@ -1,0 +1,14 @@
+
+
+html {
+    scroll-behaviour: smooth;
+}
+
+header {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: ("img/ted-johnsson-h2P_QmHvL-Y-unsplash.jpg"");
+}
