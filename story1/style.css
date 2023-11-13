@@ -17,7 +17,7 @@ header{
     justify-content: center;
     align-items: center;
     /* Husk å endre bakgrunn, også kan gjenbruke denne headeren lenger ned? */ 
-    background-image: url("img/island-natur.jpg");
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Map_of_Scandinavia.svg/1020px-Map_of_Scandinavia.svg.png");
     background-size: cover;
     background-position: center center;
 }
@@ -82,7 +82,7 @@ h2 .scroll-text{ /* Endre på størrelsen, vil ikke ha alle lik padding. Kun de 
 }
 
 #introduction{
-    background-image: url("https://images.pexels.com/photos/6697875/pexels-photo-6697875.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    background-image: url("https://dinside.dagbladet.no/images/61574764.jpg?imageId=61574764&panow=100&panoh=65.7&panox=0&panoy=0&heightw=88.7&heighth=98.8&heightx=0&heighty=0&width=1200&height=675");
     background-attachment: fixed; /* Med denne, blir backgrunnsbilde stående */
     background-repeat: no-repeat;
     background-size: cover;
@@ -98,14 +98,6 @@ h2 .scroll-text{ /* Endre på størrelsen, vil ikke ha alle lik padding. Kun de 
     font-size: calc(2rem - 2px);
     display: flex;
     flex-direction: column;
-}
-
-#map-btn{
-    max-width: 10%;
-    padding: 1rem;
-    text-decoration: none;
-    margin: 1rem;
-    align-self: center;
 }
 
 /* .flag {
