@@ -11,18 +11,20 @@ const data = {
       label: '% prosentvis hvem snuser mest?',
       data: [7, 6, 23, 12, 9],
       borderWidth: 1,
-      backgroundColor: [
-        'rgb(200, 205, 86)',
-        'rgb(54, 162, 235)',
-        'rgb(255, 205, 86)',
-        'rgb(255, 205, 86)'
-      ],
     },
   ],
 };
 
 //Kilde: https://unric.org/no/stadig-faerre-royker-i-norden/  
-//for data om hvilke land som snuser prosentvis mest og minst. 
+//for data om hvilke land som røyker prosentvis mest og minst. 
+
+const flagImages = {
+  'Norge': 'norway-flag-icon.png',
+  'Svergie': 'sweden-flag-icon.png',
+  'Danmark': 'denmark-flag-icon.png',
+  'Finland': 'finland-flag-icon.png',
+  'Island': 'iceland-flag-icon.png',
+};
 
 new Chart(ctx, {
   type: 'bar',
@@ -33,7 +35,6 @@ new Chart(ctx, {
         beginAtZero: true,
       },
     },
-
     plugins: {
       legend: {
         display: false,
@@ -47,13 +48,24 @@ new Chart(ctx, {
       },
     },
     layout: {
-      padding: 25, 
+      padding: 25,
       hoverOffset: 4,
-  }
+    },
   },
   plugins: {
-    beforeInit: (chart) => {
-      chart.data.datasets[0].backgroundColor = data.labels.map((label) => flagImages[label]);
+    beforeDraw: (chart) => {
+      const { ctx } = chart;
+
+      data.labels.forEach((label, index) => {
+        const bar = chart.getDatasetMeta(0).data[index];
+        const flagImage = new Image();
+        flagImage.src = flagImages[label];
+
+        const x = bar.x;
+        const y = bar.y;
+
+        ctx.drawImage(flagImage, x, y);
+      });
     },
   },
 });
