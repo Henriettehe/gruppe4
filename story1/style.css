@@ -110,7 +110,12 @@ h2 .scroll-text{ /* Endre på størrelsen, vil ikke ha alle lik padding. Kun de 
     justify-content: center;
     background-color: rgba(255, 255, 255, 1);
     margin-bottom: 50vh;
-    padding: 50vh;
+    padding: 30vh;
+}
+
+.overskrift-finland{
+    display: flex;
+    justify-content: center;
 }
 
 
