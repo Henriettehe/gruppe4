@@ -108,7 +108,7 @@ h2 .scroll-text{ /* Endre på størrelsen, vil ikke ha alle lik padding. Kun de 
     display: flex;
     flex-direction: row-reverse;
     justify-content: center;
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(255, 255, 255, 1);
     margin-bottom: 50vh;
     padding: 50vh;
 }
@@ -129,11 +129,31 @@ h2 .scroll-text{ /* Endre på størrelsen, vil ikke ha alle lik padding. Kun de 
         margin: 0;
     }
     #introduction{
+        padding: 1rem;
+        display: flex;
+        justify-content: space-around;
+    }
 
+    #text-section{
+        padding: 1rem;
+        display: flex;
+        justify-content: space-around;
+        width: 100vw;
+        height: 60vh; 
+    }
+
+    #text-box{
+        display: flex;
+    }
+
+    .text-section{
+        display: flex;
     }
 
     header {
         padding: 0 1rem 0 1rem;
+        width: 100vw;
+        height: 60vh; 
     }
 
     header nav a {
@@ -144,6 +164,6 @@ h2 .scroll-text{ /* Endre på størrelsen, vil ikke ha alle lik padding. Kun de 
 
     #mychart{
         margin: 0 2rem 0 2rem; 
-        
+        max-width: 48vh;
     }
 }            
