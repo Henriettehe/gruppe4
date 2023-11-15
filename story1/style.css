@@ -58,9 +58,9 @@ h2 .scroll-text{ /* Endre på størrelsen, vil ikke ha alle lik padding. Kun de 
 .scroll-text{
     /* for å få denne til å scrolles, må må den ha avstand mellom elementene + sette max-widde 50 bokstaver 
     Auto er for sidene. Mens resten er oppe og nede vh */
-    margin: 60vh auto; 
+    margin: 50vh auto; 
     max-width: 40rem; 
-    padding: 8rem; 
+    padding: 7rem; 
     background: rgba(255, 255, 255, 0.8);
     color: #000;
     font-weight: bold;
@@ -98,6 +98,19 @@ h2 .scroll-text{ /* Endre på størrelsen, vil ikke ha alle lik padding. Kun de 
     font-size: calc(2rem - 2px);
     display: flex;
     flex-direction: column;
+}
+
+.text-box{
+    margin: 0 auto;
+    min-width: 50rem;
+    clear: both;
+    font-size: calc(2rem - 2px);
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 50vh;
+    padding: 50vh;
 }
 
 
