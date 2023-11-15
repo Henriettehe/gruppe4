@@ -14,9 +14,6 @@ const data = {
   ],
 };
 
-//Kilde: https://unric.org/no/stadig-faerre-royker-i-norden/  
-//for data om hvilke land som røyker prosentvis mest og minst. 
-
 const flagImages = {
   'Norge': 'norway-flag-icon.png',
   'Svergie': 'sweden-flag-icon.png',
@@ -51,6 +48,8 @@ new Chart(ctx, {
       hoverOffset: 4,
     },
   },
+
+  // Prøvd å endre barchartens bakgrunn til flagg. Må høre med Marius om hjelp? 
   plugins: {
     beforeDraw: (chart) => {
       const { ctx } = chart;
