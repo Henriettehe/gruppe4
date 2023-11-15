@@ -3,7 +3,6 @@
 
 const ctx = document.getElementById('mychart').getContext('2d');
 
-// Replace this data with your actual dataset
 const data = {
   labels: ['Norge', 'Svergie', 'Danmark', 'Finland' ,'Island'],
   datasets: [
