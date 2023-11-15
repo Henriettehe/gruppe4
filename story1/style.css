@@ -16,10 +16,10 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
-    /* Husk å endre bakgrunn, også kan gjenbruke denne headeren lenger ned? */ 
     background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Map_of_Scandinavia.svg/1020px-Map_of_Scandinavia.svg.png");
     background-size: cover;
     background-position: center center;
+    /* transition: background-image 2s; */
 }
 
 nav{
@@ -100,10 +100,6 @@ h2 .scroll-text{ /* Endre på størrelsen, vil ikke ha alle lik padding. Kun de 
     flex-direction: column;
 }
 
-/* .flag {
-    height: 20px;
-    margin-right: 10px;
-} */
 
 #mychart {
   background-size: contain;
