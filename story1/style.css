@@ -99,7 +99,7 @@ h2 .scroll-text{ /* Endre på størrelsen, vil ikke ha alle lik padding. Kun de 
 }
 
 #introduction{
-    background-image: url("https://dinside.dagbladet.no/images/61574764.jpg?imageId=61574764&panow=100&panoh=65.7&panox=0&panoy=0&heightw=88.7&heighth=98.8&heightx=0&heighty=0&width=1200&height=675");
+    background-image: url("");
     background-attachment: fixed; /* Med denne, blir backgrunnsbilde stående */
     background-repeat: no-repeat;
     background-size: cover;
@@ -130,7 +130,8 @@ h2 .scroll-text{ /* Endre på størrelsen, vil ikke ha alle lik padding. Kun de 
 
 .text-box{
     margin: 0 auto;
-    min-width: 50rem;
+    width: 100%;
+    max-width: 50rem;
     clear: both;
     font-size: calc(2rem - 2px);
     display: flex;
@@ -152,6 +153,14 @@ h2 .scroll-text{ /* Endre på størrelsen, vil ikke ha alle lik padding. Kun de 
   background-repeat: no-repeat;
   background: rgba(255, 255, 255, 0.8); 
 }
+
+/* nth-child (odd) : 
+float: right
+
+
+nyttflagg{ 
+    float: left. 
+    */ 
 
 
 

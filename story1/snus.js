@@ -11,6 +11,13 @@ const data = {
       label: '% prosentvis hvem snuser mest?',
       data: [7, 6, 23, 12, 9],
       borderWidth: 1,
+      backgroundColor: [
+        // Endre og finne primærfargene til hvert land. 
+        // norge farge rød
+        // Danmark
+        // Island
+        // svergie - gul-
+      ]
     },
   ],
 };
