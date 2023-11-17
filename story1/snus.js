@@ -7,6 +7,7 @@ const data = {
   labels: ['Norge', 'Svergie', 'Danmark', 'Finland' ,'Island'],
   datasets: [
     {
+      /* Husk å oppdatere data verdiene. */
       label: '% prosentvis hvem snuser mest?',
       data: [7, 6, 23, 12, 9],
       borderWidth: 1,
