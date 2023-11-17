@@ -7,7 +7,7 @@ html {
 }
 
 img{
-    max-width: 10%;
+    max-width: 100%;
 }
 
 header{
@@ -67,6 +67,23 @@ h2 .scroll-text{ /* Endre på størrelsen, vil ikke ha alle lik padding. Kun de 
     background-color: rgba(255, 255, 255, 0.8); /* Må finne ut hvordan få hvit boks bak for økt lesbarhet og fjerne de hvite kantene. */ 
 }
 
+.scroll-text p {
+    /* background-color: black;
+    color: white; */
+}
+
+#bakgrunn-2{
+    clear: both;
+    width: 100vw;
+    height: 180vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Map_of_Scandinavia.svg/1020px-Map_of_Scandinavia.svg.png); */ 
+    background-size: cover;
+    background-position: center center;
+}
+
 .scroll-container .scroll-text{
     background-repeat: no-repeat;
     background-position: center;
@@ -100,6 +117,17 @@ h2 .scroll-text{ /* Endre på størrelsen, vil ikke ha alle lik padding. Kun de 
     flex-direction: column;
 }
 
+.text-section #skipToChart{
+    min-width: 50rem;
+    margin: 0 auto;
+    /* Disse to verdiene, block og both. Gjør at ingenting kan være ved siden av.*/
+    display: block;
+    clear: both;
+    font-size: calc(2rem - 2px);
+    display: flex;
+    flex-direction: column;
+}
+
 .text-box{
     margin: 0 auto;
     min-width: 50rem;
@@ -109,8 +137,7 @@ h2 .scroll-text{ /* Endre på størrelsen, vil ikke ha alle lik padding. Kun de 
     flex-direction: row-reverse;
     justify-content: center;
     background-color: rgba(255, 255, 255, 1);
-    margin-bottom: 50vh;
-    padding: 30vh;
+    padding: 10vh;
 }
 
 .overskrift-finland{
@@ -147,8 +174,17 @@ h2 .scroll-text{ /* Endre på størrelsen, vil ikke ha alle lik padding. Kun de 
         justify-content: space-around;
     }
 
+    #bakgrunn-2{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
     #mychart{
         margin: 0 2rem 0 2rem; 
         
+    }
+
+    .text-box{
+        width: 100%;
     }
 }            
