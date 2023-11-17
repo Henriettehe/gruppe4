@@ -22,14 +22,6 @@ const data = {
   ],
 };
 
-const flagImages = {
-  'Norge': 'norway-flag-icon.png',
-  'Svergie': 'sweden-flag-icon.png',
-  'Danmark': 'denmark-flag-icon.png',
-  'Finland': 'finland-flag-icon.png',
-  'Island': 'iceland-flag-icon.png',
-};
-
 new Chart(ctx, {
   type: 'bar',
   data: data,
@@ -52,26 +44,8 @@ new Chart(ctx, {
       },
     },
     layout: {
-      padding: 25,
+      padding: 40,
       hoverOffset: 4,
-    },
-  },
-
-  // Prøvd å endre barchartens bakgrunn til flagg. Må høre med Marius om hjelp? 
-  plugins: {
-    beforeDraw: (chart) => {
-      const { ctx } = chart;
-
-      data.labels.forEach((label, index) => {
-        const bar = chart.getDatasetMeta(0).data[index];
-        const flagImage = new Image();
-        flagImage.src = flagImages[label];
-
-        const x = bar.x;
-        const y = bar.y;
-
-        ctx.drawImage(flagImage, x, y);
-      });
     },
   },
 });

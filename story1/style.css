@@ -19,7 +19,7 @@ header{
     background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Map_of_Scandinavia.svg/1020px-Map_of_Scandinavia.svg.png");
     background-size: cover;
     background-position: center center;
-    /* transition: background-image 2s; */
+    transition: background-image 2s;
 }
 
 nav{
@@ -44,6 +44,10 @@ header a {
     justify-self: center;
 }
 
+a{
+    text-decoration: none;
+}
+
 .scroll-container{
     width: 100vw;
     min-height: 60vh;
@@ -59,8 +63,8 @@ h2 .scroll-text{ /* Endre på størrelsen, vil ikke ha alle lik padding. Kun de 
     /* for å få denne til å scrolles, må må den ha avstand mellom elementene + sette max-widde 50 bokstaver 
     Auto er for sidene. Mens resten er oppe og nede vh */
     margin: 50vh auto; 
-    max-width: 40rem; 
-    padding: 7rem; 
+    max-width: 50rem;
+    padding: 5rem;
     background: rgba(255, 255, 255, 0.8);
     color: #000;
     font-weight: bold;
@@ -99,7 +103,7 @@ h2 .scroll-text{ /* Endre på størrelsen, vil ikke ha alle lik padding. Kun de 
 }
 
 #introduction{
-    background-image: url("");
+    background-image: url(""); /* Passe på at bildene er fra en gratis bildebank! */ 
     background-attachment: fixed; /* Med denne, blir backgrunnsbilde stående */
     background-repeat: no-repeat;
     background-size: cover;
@@ -117,12 +121,13 @@ h2 .scroll-text{ /* Endre på størrelsen, vil ikke ha alle lik padding. Kun de 
     flex-direction: column;
 }
 
-.text-section #skipToChart{
-    min-width: 50rem;
+#skipToChart{
+    max-width: 50rem;
     margin: 0 auto;
     /* Disse to verdiene, block og both. Gjør at ingenting kan være ved siden av.*/
     display: block;
     clear: both;
+    width: 100%;
     font-size: calc(2rem - 2px);
     display: flex;
     flex-direction: column;
@@ -135,10 +140,11 @@ h2 .scroll-text{ /* Endre på størrelsen, vil ikke ha alle lik padding. Kun de 
     clear: both;
     font-size: calc(2rem - 2px);
     display: flex;
-    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    flex-direction: column;
     justify-content: center;
     background-color: rgba(255, 255, 255, 1);
-    padding: 10vh;
+    padding: 20vh;
 }
 
 .overskrift-finland{
@@ -165,7 +171,7 @@ nyttflagg{
 
 
 
-@media only screen and (min-width: 400px) {
+@media only screen and (min-width: 550px) {
     body{
         margin: 0;
     }
@@ -189,12 +195,14 @@ nyttflagg{
     }
 
     #mychart{
-        margin: 0 2rem 0 2rem; 
-        
+        display: block;
+    }
+
+    #mychart:hover{
+        /* width: 400vh; */ 
     }
 
     .text-box{
-        width: 100%;
-        display: block;
+
     }
 }            
