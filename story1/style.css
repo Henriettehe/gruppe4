@@ -186,5 +186,6 @@ h2 .scroll-text{ /* Endre på størrelsen, vil ikke ha alle lik padding. Kun de 
 
     .text-box{
         width: 100%;
+        display: block;
     }
 }            
