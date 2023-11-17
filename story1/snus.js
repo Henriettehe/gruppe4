@@ -12,11 +12,12 @@ const data = {
       data: [7, 6, 23, 12, 9],
       borderWidth: 1,
       backgroundColor: [
-        // Endre og finne primærfargene til hvert land. 
-        // norge farge rød
-        // Danmark
-        // Island
-        // svergie - gul-
+        '#EF3340',
+        '#0051A8',
+        '#C60C30',
+        '#003580',
+        '#02529C',
+        // Dette er alle primærfargene til hvert skandinaviske land, ser nå i ettertid at dette er veldig dårlig UU- da det kun er rødt og blått :/ 
       ]
     },
   ],
