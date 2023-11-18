@@ -1,0 +1,68 @@
+﻿"VAR","Variable","UNIT","Measure","COU","Country","YEA","Year","Value","Flag Codes","Flags"
+"TOBATBCT","Tobacco consumption","GRPPERQT","Grams per capita (15+)","DNK","Denmark","2020","2020",979,"D","Difference in methodology"
+"TOBATBCT","Tobacco consumption","GRPPERQT","Grams per capita (15+)","DNK","Denmark","2021","2021",1027,"D","Difference in methodology"
+"TOBATBCT","Tobacco consumption","PDLSFMTF","% of females aged 15+ who are daily smokers","DNK","Denmark","2021","2021",12.7,,
+"TOBATBCT","Tobacco consumption","PDLSHOTH","% of males aged 15+ who are daily smokers","DNK","Denmark","2021","2021",15.2,,
+"TOBATBCT","Tobacco consumption","PDLSTOTX","% of population aged 15+ who are daily smokers","DNK","Denmark","2021","2021",13.9,,
+"TOBATBCT","Tobacco consumption","YNGPPTPC","% of population aged 15-24 years old who are daily smokers","DNK","Denmark","2021","2021",9.2,,
+"TOBATBCT","Tobacco consumption","YNGPPHPH","% of males aged 15-24 years old who are daily smokers","DNK","Denmark","2021","2021",9.2,,
+"TOBATBCT","Tobacco consumption","YNGPPFPF","% of females aged 15-24 years old who are daily smokers","DNK","Denmark","2021","2021",9.3,,
+"TOBATBCT","Tobacco consumption","GRPPERQT","Grams per capita (15+)","FIN","Finland","2020","2020",735,,
+"TOBATBCT","Tobacco consumption","GRPPERQT","Grams per capita (15+)","FIN","Finland","2021","2021",438,,
+"TOBATBCT","Tobacco consumption","PDLSFMTF","% of females aged 15+ who are daily smokers","FIN","Finland","2020","2020",11,"D","Difference in methodology"
+"TOBATBCT","Tobacco consumption","PDLSHOTH","% of males aged 15+ who are daily smokers","FIN","Finland","2020","2020",14,"D","Difference in methodology"
+"TOBATBCT","Tobacco consumption","PDLSTOTX","% of population aged 15+ who are daily smokers","FIN","Finland","2020","2020",12,"D","Difference in methodology"
+"TOBATBCT","Tobacco consumption","PDLSFMTF","% of females aged 15+ who are daily smokers","ISL","Iceland","2020","2020",7.9,"D","Difference in methodology"
+"TOBATBCT","Tobacco consumption","PDLSFMTF","% of females aged 15+ who are daily smokers","ISL","Iceland","2021","2021",6.8,"D","Difference in methodology"
+"TOBATBCT","Tobacco consumption","PDLSFMTF","% of females aged 15+ who are daily smokers","ISL","Iceland","2022","2022",6.4,"D","Difference in methodology"
+"TOBATBCT","Tobacco consumption","PDLSHOTH","% of males aged 15+ who are daily smokers","ISL","Iceland","2020","2020",6.7,"D","Difference in methodology"
+"TOBATBCT","Tobacco consumption","PDLSHOTH","% of males aged 15+ who are daily smokers","ISL","Iceland","2021","2021",7.5,"D","Difference in methodology"
+"TOBATBCT","Tobacco consumption","PDLSHOTH","% of males aged 15+ who are daily smokers","ISL","Iceland","2022","2022",6,"D","Difference in methodology"
+"TOBATBCT","Tobacco consumption","PDLSTOTX","% of population aged 15+ who are daily smokers","ISL","Iceland","2020","2020",7.3,"D","Difference in methodology"
+"TOBATBCT","Tobacco consumption","PDLSTOTX","% of population aged 15+ who are daily smokers","ISL","Iceland","2021","2021",7.2,"D","Difference in methodology"
+"TOBATBCT","Tobacco consumption","PDLSTOTX","% of population aged 15+ who are daily smokers","ISL","Iceland","2022","2022",6.2,"D","Difference in methodology"
+"TOBATBCT","Tobacco consumption","YNGPPTPC","% of population aged 15-24 years old who are daily smokers","ISL","Iceland","2020","2020",2.4,"D","Difference in methodology"
+"TOBATBCT","Tobacco consumption","YNGPPTPC","% of population aged 15-24 years old who are daily smokers","ISL","Iceland","2021","2021",3.9,"D","Difference in methodology"
+"TOBATBCT","Tobacco consumption","YNGPPTPC","% of population aged 15-24 years old who are daily smokers","ISL","Iceland","2022","2022",3,"D","Difference in methodology"
+"TOBATBCT","Tobacco consumption","YNGPPHPH","% of males aged 15-24 years old who are daily smokers","ISL","Iceland","2020","2020",2.6,"D","Difference in methodology"
+"TOBATBCT","Tobacco consumption","YNGPPHPH","% of males aged 15-24 years old who are daily smokers","ISL","Iceland","2021","2021",5.2,"D","Difference in methodology"
+"TOBATBCT","Tobacco consumption","YNGPPHPH","% of males aged 15-24 years old who are daily smokers","ISL","Iceland","2022","2022",2.6,"D","Difference in methodology"
+"TOBATBCT","Tobacco consumption","YNGPPFPF","% of females aged 15-24 years old who are daily smokers","ISL","Iceland","2020","2020",2.3,"D","Difference in methodology"
+"TOBATBCT","Tobacco consumption","YNGPPFPF","% of females aged 15-24 years old who are daily smokers","ISL","Iceland","2021","2021",2.6,"D","Difference in methodology"
+"TOBATBCT","Tobacco consumption","YNGPPFPF","% of females aged 15-24 years old who are daily smokers","ISL","Iceland","2022","2022",3.5,"D","Difference in methodology"
+"TOBATBCT","Tobacco consumption","GRPPERQT","Grams per capita (15+)","NOR","Norway","2020","2020",893,,
+"TOBATBCT","Tobacco consumption","GRPPERQT","Grams per capita (15+)","NOR","Norway","2021","2021",1115,,
+"TOBATBCT","Tobacco consumption","GRPPERQT","Grams per capita (15+)","NOR","Norway","2022","2022",988,,
+"TOBATBCT","Tobacco consumption","NBPFUMNB","Cigarettes per smoker per day","NOR","Norway","2020","2020",12.5,,
+"TOBATBCT","Tobacco consumption","NBPFUMNB","Cigarettes per smoker per day","NOR","Norway","2021","2021",11.8,,
+"TOBATBCT","Tobacco consumption","NBPFUMNB","Cigarettes per smoker per day","NOR","Norway","2022","2022",10.8,,
+"TOBATBCT","Tobacco consumption","PDLSFMTF","% of females aged 15+ who are daily smokers","NOR","Norway","2020","2020",9,,
+"TOBATBCT","Tobacco consumption","PDLSFMTF","% of females aged 15+ who are daily smokers","NOR","Norway","2021","2021",9,,
+"TOBATBCT","Tobacco consumption","PDLSFMTF","% of females aged 15+ who are daily smokers","NOR","Norway","2022","2022",8,,
+"TOBATBCT","Tobacco consumption","PDLSHOTH","% of males aged 15+ who are daily smokers","NOR","Norway","2020","2020",9,,
+"TOBATBCT","Tobacco consumption","PDLSHOTH","% of males aged 15+ who are daily smokers","NOR","Norway","2021","2021",6,,
+"TOBATBCT","Tobacco consumption","PDLSHOTH","% of males aged 15+ who are daily smokers","NOR","Norway","2022","2022",7,,
+"TOBATBCT","Tobacco consumption","PDLSTOTX","% of population aged 15+ who are daily smokers","NOR","Norway","2020","2020",9,,
+"TOBATBCT","Tobacco consumption","PDLSTOTX","% of population aged 15+ who are daily smokers","NOR","Norway","2021","2021",8,,
+"TOBATBCT","Tobacco consumption","PDLSTOTX","% of population aged 15+ who are daily smokers","NOR","Norway","2022","2022",7,,
+"TOBATBCT","Tobacco consumption","YNGPPTPC","% of population aged 15-24 years old who are daily smokers","NOR","Norway","2020","2020",1,,
+"TOBATBCT","Tobacco consumption","YNGPPTPC","% of population aged 15-24 years old who are daily smokers","NOR","Norway","2021","2021",1,,
+"TOBATBCT","Tobacco consumption","YNGPPTPC","% of population aged 15-24 years old who are daily smokers","NOR","Norway","2022","2022",2,,
+"TOBATBCT","Tobacco consumption","YNGPPHPH","% of males aged 15-24 years old who are daily smokers","NOR","Norway","2020","2020",2,,
+"TOBATBCT","Tobacco consumption","YNGPPHPH","% of males aged 15-24 years old who are daily smokers","NOR","Norway","2021","2021",2,,
+"TOBATBCT","Tobacco consumption","YNGPPHPH","% of males aged 15-24 years old who are daily smokers","NOR","Norway","2022","2022",4,,
+"TOBATBCT","Tobacco consumption","YNGPPFPF","% of females aged 15-24 years old who are daily smokers","NOR","Norway","2020","2020",1,,
+"TOBATBCT","Tobacco consumption","YNGPPFPF","% of females aged 15-24 years old who are daily smokers","NOR","Norway","2021","2021",1,,
+"TOBATBCT","Tobacco consumption","YNGPPFPF","% of females aged 15-24 years old who are daily smokers","NOR","Norway","2022","2022",0,,
+"TOBATBCT","Tobacco consumption","PDLSFMTF","% of females aged 15+ who are daily smokers","SWE","Sweden","2020","2020",8.7,,
+"TOBATBCT","Tobacco consumption","PDLSFMTF","% of females aged 15+ who are daily smokers","SWE","Sweden","2021","2021",9.1,,
+"TOBATBCT","Tobacco consumption","PDLSHOTH","% of males aged 15+ who are daily smokers","SWE","Sweden","2020","2020",10.2,,
+"TOBATBCT","Tobacco consumption","PDLSHOTH","% of males aged 15+ who are daily smokers","SWE","Sweden","2021","2021",10.2,,
+"TOBATBCT","Tobacco consumption","PDLSTOTX","% of population aged 15+ who are daily smokers","SWE","Sweden","2020","2020",9.5,,
+"TOBATBCT","Tobacco consumption","PDLSTOTX","% of population aged 15+ who are daily smokers","SWE","Sweden","2021","2021",9.7,,
+"TOBATBCT","Tobacco consumption","YNGPPTPC","% of population aged 15-24 years old who are daily smokers","SWE","Sweden","2020","2020",6.9,,
+"TOBATBCT","Tobacco consumption","YNGPPTPC","% of population aged 15-24 years old who are daily smokers","SWE","Sweden","2021","2021",8.6,,
+"TOBATBCT","Tobacco consumption","YNGPPHPH","% of males aged 15-24 years old who are daily smokers","SWE","Sweden","2020","2020",7,,
+"TOBATBCT","Tobacco consumption","YNGPPHPH","% of males aged 15-24 years old who are daily smokers","SWE","Sweden","2021","2021",10.2,,
+"TOBATBCT","Tobacco consumption","YNGPPFPF","% of females aged 15-24 years old who are daily smokers","SWE","Sweden","2020","2020",6.8,,
+"TOBATBCT","Tobacco consumption","YNGPPFPF","% of females aged 15-24 years old who are daily smokers","SWE","Sweden","2021","2021",6.9,,
