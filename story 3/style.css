@@ -20,7 +20,7 @@ head {
 .fade-in-text {
     font-family: Arial;
     font-size: 150px
-    animation: fadeIn 6s;
+    animation; fadeIn 6s;
 }
 
 @keyframes fadeIn {
@@ -44,5 +44,5 @@ head {
 }
 
 #map{
-
+    height: 400px;
 }
