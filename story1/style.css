@@ -7,7 +7,7 @@ html {
 }
 
 img{
-    max-width: 10%;
+    max-width: 100%;
 }
 
 header{
@@ -16,10 +16,10 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
-    /* Husk å endre bakgrunn, også kan gjenbruke denne headeren lenger ned? */ 
-    background-image: url("img/island-natur.jpg");
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Map_of_Scandinavia.svg/1020px-Map_of_Scandinavia.svg.png");
     background-size: cover;
     background-position: center center;
+    transition: background-image 2s;
 }
 
 nav{
@@ -44,6 +44,10 @@ header a {
     justify-self: center;
 }
 
+a{
+    text-decoration: none;
+}
+
 .scroll-container{
     width: 100vw;
     min-height: 60vh;
@@ -51,32 +55,62 @@ header a {
     transition: background-image 1s; /* Bygd inn fade-in fade out */
 }
 
+.scroll-text-top{
+    margin: 50vh auto; 
+    max-width: 50rem;
+    padding: 5rem;
+    color: #000;
+}
+
+h2 .scroll-text{ /* Endre på størrelsen, vil ikke ha alle lik padding. Kun de små*/ 
+    padding: 2rem; 
+}
+
 .scroll-text{
     /* for å få denne til å scrolles, må må den ha avstand mellom elementene + sette max-widde 50 bokstaver 
     Auto er for sidene. Mens resten er oppe og nede vh */
     margin: 50vh auto; 
-    max-width: 50rem; 
-    padding: 1rem;
-    background: rgba(255, 255, 255, 0.8);
+    max-width: 50rem;
+    padding: 5rem;
     color: #000;
+    font-size: large;
+    background-color: rgba(208, 206, 206, 0.8); /* Må finne ut hvordan få hvit boks bak for økt lesbarhet og fjerne de hvite kantene. */ 
 }
 
-p{
+.scroll-text p {
+    
+}
+
+#bakgrunn-2{
+    clear: both;
+    width: 100vw;
+    height: 180vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Map_of_Scandinavia.svg/1020px-Map_of_Scandinavia.svg.png); */ 
+    background-size: cover;
+    background-position: center center;
+}
+
+.scroll-container .scroll-text{
     background-repeat: no-repeat;
     background-position: center;
     width: 100%;
 }
 
-.scroll-text img {
-    display: flex;
-    max-width: 400px;
-    width: 50%;
-    margin-left: auto;
-    margin-right: auto;
+/* For å få bildene til å flyte annen hver gang til hver sin side */ 
+.scroll-text:nth-child(odd) {
+    float: right;
+    border-radius: 10px 10px 10px 10px;
+}
+
+.scroll-text:nth-child(even){
+    float: left;
 }
 
 #introduction{
-    background-image: url("https://images.pexels.com/photos/6697875/pexels-photo-6697875.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    background-image: url(""); /* Passe på at bildene er fra en gratis bildebank! */ 
     background-attachment: fixed; /* Med denne, blir backgrunnsbilde stående */
     background-repeat: no-repeat;
     background-size: cover;
@@ -94,18 +128,37 @@ p{
     flex-direction: column;
 }
 
-#map-btn{
-    max-width: 10%;
-    padding: 1rem;
-    text-decoration: none;
-    margin: 1rem;
-    align-self: center;
+#skipToChart{
+    max-width: 50rem;
+    margin: 0 auto;
+    /* Disse to verdiene, block og both. Gjør at ingenting kan være ved siden av.*/
+    display: block;
+    clear: both;
+    width: 100%;
+    font-size: calc(2rem - 2px);
+    display: flex;
+    flex-direction: column;
 }
 
-/* .flag {
-    height: 20px;
-    margin-right: 10px;
-} */
+.text-box{
+    margin: 0 auto;
+    width: 100%;
+    max-width: 50rem;
+    clear: both;
+    font-size: calc(2rem - 2px);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 1);
+    padding: 20vh;
+}
+
+.overskrift-finland{
+    display: flex;
+    justify-content: center;
+}
+
 
 #mychart {
   background-size: contain;
@@ -114,15 +167,23 @@ p{
   background: rgba(255, 255, 255, 0.8); 
 }
 
+/* nth-child (odd) : 
+float: right
+
+
+nyttflagg{ 
+    float: left. 
+    */ 
 
 
 
-@media only screen and (min-width: 400px) {
+
+@media only screen and (min-width: 550px) {
     body{
         margin: 0;
     }
     #introduction{
-
+        
     }
 
     header {
@@ -135,8 +196,20 @@ p{
         justify-content: space-around;
     }
 
+    #bakgrunn-2{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
     #mychart{
-        margin: 0 2rem 0 2rem; 
-        
+        display: block;
+    }
+
+    #mychart:hover{
+        /* width: 400vh; */ 
+    }
+
+    .text-box{
+
     }
 }            

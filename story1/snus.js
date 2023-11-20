@@ -3,26 +3,25 @@
 
 const ctx = document.getElementById('mychart').getContext('2d');
 
-// Replace this data with your actual dataset
 const data = {
   labels: ['Norge', 'Svergie', 'Danmark', 'Finland' ,'Island'],
   datasets: [
     {
+      /* Husk å oppdatere data verdiene. */
       label: '% prosentvis hvem snuser mest?',
       data: [7, 6, 23, 12, 9],
       borderWidth: 1,
       backgroundColor: [
-        'rgb(200, 205, 86)',
-        'rgb(54, 162, 235)',
-        'rgb(255, 205, 86)',
-        'rgb(255, 205, 86)'
-      ],
+        '#EF3340',
+        '#0051A8',
+        '#C60C30',
+        '#003580',
+        '#02529C',
+        // Dette er alle primærfargene til hvert skandinaviske land, ser nå i ettertid at dette er veldig dårlig UU- da det kun er rødt og blått :/ 
+      ]
     },
   ],
 };
-
-//Kilde: https://unric.org/no/stadig-faerre-royker-i-norden/  
-//for data om hvilke land som snuser prosentvis mest og minst. 
 
 new Chart(ctx, {
   type: 'bar',
@@ -33,7 +32,6 @@ new Chart(ctx, {
         beginAtZero: true,
       },
     },
-
     plugins: {
       legend: {
         display: false,
@@ -47,13 +45,8 @@ new Chart(ctx, {
       },
     },
     layout: {
-      padding: 25, 
+      padding: 40,
       hoverOffset: 4,
-  }
-  },
-  plugins: {
-    beforeInit: (chart) => {
-      chart.data.datasets[0].backgroundColor = data.labels.map((label) => flagImages[label]);
     },
   },
 });

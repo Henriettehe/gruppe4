@@ -14,61 +14,51 @@
     <body>
         <header role="banner">
             <nav>
-                <h1>"Skjønnheten i tobakksfrie dager: Feiringen av "We need food, not tobacco" i 2023!</h1>
-                <a href="#introduction">Tall fra forskning</a>
-                <a href="#skipToChart">Skip til hvilke skandinaviske land som topper listen!</a>
-                <a href="#mestsnus">Hvilket land snuser mest?</a>
+                <h1>De hemmelige snuserne</h1>
+                <a href="#introduction">Start historien</a>
+                <a href="#mychart">Hvem topper listen i skandinavia?</a>
             </nav>
         </header>
 
         <section class="scroll-container" id="introduction">
-            <div class="scroll-text"><h2>Topp 3: Hvilke skandinaviske land topper listen?</h2></div>
-            <section class="text-section" id="skipToChart">
-                <h2 class="scroll-text">Hvem snuser mest av de skandinaviske landene?</h2> <!---Vurdere mer fengende h-tags -->
-                
-                <canvas id="mychart"></canvas>
+            <section class="text-section" id="bakgrunn2">
+                <section class="text-box">
+                    <p>Svenskene har gitt verden ABBA, IKEA og, selvfølgelig, snusen. Nordmenn omfavner det som om det var brunost, men hva med Island? Er det en hemmelig snusning som foregår i islendingenes bakgårder?</p>
+                </section> <!---Vurdere mer fengende h-tags -->
             </section>
-            <div class="scroll-text" style="background-image: url('flags/norway-flag-icon.png');"><p>I Norge røykte 7 prosent av befolkningen daglig i 2022. Det tilsvarer omtrent like mange som de som elsker brunost som pålegg.</p></div> <!---Legge inn svg flagg av hvert land -->
-            <div class="scroll-text" style="background-image: url('flags/sweden-flag-icon.png');"><p>Sverige har redusert daglig røyking siden 2004, med kun 6% som røyker daglig i 2022.</p></div>
-            <div class="scroll-text" style="background-image: url('flags/denmark-flag-icon.png');"><p>Danskene overrasker, med 23% som bruker nikotinprodukter, og trenden er nå å bytte ut sigaretten med e-sigaretter</p></div>
-            <div class="scroll-text" style="background-image: url('flags/finland-flag-icon.png');"><p>I Finland røykte rundt 12 prosent av menneskene i alderen 20-64 daglig i 2020, men røyking har gått ned, spesielt blant menn.</p></div>
-            <div class="scroll-text" style="background-image: url('flags/iceland-flag-icon.png');"><p>På Island røykte 9% av befolkningen sigaretter i 2022, men det har vært en nedgang i salg av sigaretter og en økning i bruk av elektroniske sigaretter.</p></div> <!---Legge inn svg flagg av hvert land -->
+
+            <div class="scroll-text-top"><h2>Island, landet med geysirer og majestetiske fossefall, skiller seg ut når det kommer til snusvaner. Er det på grunn av noe magisk fjellvann eller kanskje trollene som bebor øya? Vel, kanskje ikke, men det kan hende at lovene har en finger med i spillet. </h2></div>
+            <section class="text-box">
+                <h2 class="overskrift-finland">Finland Satser på Snusfri Fremtid: Målet er Under 5% Brukere innen 2030</h2>
+                <p>I praksis jobber det finske helsedepartementet hardt for å sikre at færre enn 5 prosent av den voksne befolkningen i Finland bruker snus og lignende produkter innen 2030. Allerede i 1995, da Finland ble medlem av EU, ble det forbudt å selge snus i landet. I dag, i 2023, er Sverige det eneste EU-landet der det er tillatt å selge snus.<br> <br><a href="https://www.tv2.no/direkte/jpybz/siste-nytt/63ee3b50510b0ec62933053e/vil-gjore-finland-tobakksfri-innen-2030-foreslar-forbud-mot-snusimport">Finland er på en tydelig kurs mot en snusfri framtid, </a>og det ser ut til at de holder fast ved sitt engasjement for en tobakksfri befolkning.</p>
+                <h2>Hvem er verst i skandinavia?</h2>
+            </section>
+            <section class="text-section" id="skipToChart">
+                <canvas id="mychart">
+                    Barchart laget med <a href="chartjs.org"></a>
+                </canvas>
+            </section>
+            <!---Trekke ut flag bildene, ha de ved siden av hverandre med teksten.-->
+            <div class="scroll-text"><p>I Norge røykte 7 prosent av befolkningen daglig i 2022. Det tilsvarer omtrent like mange som de som elsker brunost som pålegg.</p><img src="flags/norway-flag-icon.png">Bildet hentet fra <a href="uxwing.com/">UX-wing </a>&copy;</div>
+            <div class="scroll-text"><p>Sverige har redusert daglig røyking siden 2004, med kun 6% som røyker daglig i 2022.</p><img src="flags/sweden-flag-icon.png">Bildet hentet fra <a href="uxwing.com/">UX-wing </a>&copy;</div>
+            <div class="scroll-text"><p>Danskene overrasker, med 23% som bruker nikotinprodukter, og trenden er nå å bytte ut sigaretten med e-sigaretter</p><img src="flags/denmark-flag-icon.png">Bildet hentet fra <a href="uxwing.com/">UX-wing </a>&copy;</div>
+            <div class="scroll-text"><p>I Finland røykte rundt 12 prosent av menneskene i alderen 20-64 daglig i 2020, men røyking har gått ned, spesielt blant menn.</p><img src="flags/finland-flag-icon.png">Bildet hentet fra <a href="uxwing.com/">UX-wing </a>&copy;</div>
+            <div class="scroll-text"><p>På Island røykte 9% av befolkningen sigaretter i 2022, men det har vært en nedgang i salg av sigaretter og en økning i bruk av elektroniske sigaretter.</p><img src="flags/iceland-flag-icon.png">Bildet hentet fra <a href="uxwing.com/">UX-wing </a>&copy;</div> <!---Legge inn svg flagg av hvert land -->
         </section>   
 
-        <section class="text-section" id="skipToChart">
-            <h2>Hvem snuser mest av de skandinaviske landene?</h2> <!---Vurdere mer fengende h-tags -->
-            
-            <canvas id="mychart"></canvas>
+        <section class="text-section" id="bakgrunn2">
+            <section class="text-box">
+                <p>Svenskene har gitt verden ABBA, IKEA og, selvfølgelig, snusen. Nordmenn omfavner det som om det var brunost, men hva med Island? Er det en hemmelig snusning som foregår i islendingenes bakgårder?</p>
+            </section> <!---Vurdere mer fengende h-tags -->
         </section>
 
         <section class="text-section">
-            <h2>Here is a map over where the championsships where: </h2>
-            <!--Test, på hvordan få inn flagg på siden, og kanskje erstatte barene til representative flagg-->
-            <canvas id="mestSnus"></canvas>
-
-            <!---
-             <div class="flag-container">
-                <div class="flag">
-                    <img src="flags/norge.svg" alt="Norske flagget">
-                    <span>Norge</span>
-                </div>
-                <div class="flag">
-                    <img src="sweden.svg" alt="Swedish Flag">
-                    <span>Sverige</span>
-                </div>
-                <div class="flag">
-                    <img src="denmark.svg" alt="Danish Flag">
-                    <span>Danmark</span>
-                </div>
-                <div class="flag">
-                    <img src="finland.svg" alt="Finnish Flag" >
-                    <span>Finland</span>
-                </div>
-            </div>
-            -->
-           
-            <button id="map-btn" role="button">Here is the map</button>
+            
         </section>
+
+        <section class="scroll-container">
+                <p></p>
+            </section>  
     </body>
     <script src="snus.js"></script>
 </html>
