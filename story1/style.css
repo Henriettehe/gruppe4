@@ -107,12 +107,12 @@ h2 .scroll-text{ /* Endre på størrelsen, vil ikke ha alle lik padding. Kun de 
 }
 
 /* For å få bildene til å flyte annen hver gang til hver sin side */ 
-.scroll-text:nth-child(odd) {
+#scandic:nth-child(odd) {
     float: right;
     border-radius: 10px 10px 10px 10px;
 }
 
-.scroll-text:nth-child(even){
+#scandic:nth-child(even){
     float: left;
 }
 
