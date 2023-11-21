@@ -74,7 +74,7 @@ h2 .scroll-text{ /* Endre på størrelsen, vil ikke ha alle lik padding. Kun de 
     padding: 5rem;
     color: #000;
     font-size: large;
-    background-color: rgba(208, 206, 206, 0.8); /* Må finne ut hvordan få hvit boks bak for økt lesbarhet og fjerne de hvite kantene. */ 
+    background-color: rgba(239, 239, 239, 0.8); /* Må finne ut hvordan få hvit boks bak for økt lesbarhet og fjerne de hvite kantene. */ 
 }
 
 .scroll-text p {
@@ -161,10 +161,7 @@ h2 .scroll-text{ /* Endre på størrelsen, vil ikke ha alle lik padding. Kun de 
 
 
 #mychart {
-  background-size: contain;
-  background-position: 50%;
-  background-repeat: no-repeat;
-  background: rgba(255, 255, 255, 0.8); 
+
 }
 
 /* nth-child (odd) : 
