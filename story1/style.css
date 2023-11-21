@@ -230,7 +230,6 @@ nyttflagg{
 
     #mychart{
         display: block;
-        max-width: 80%;
     }
 
     #mychart:hover{
@@ -238,6 +237,6 @@ nyttflagg{
     }
 
     .text-box{
-        display: flex;
+
     }
 }            
