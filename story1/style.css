@@ -66,31 +66,36 @@ h2 .scroll-text{ /* Endre på størrelsen, vil ikke ha alle lik padding. Kun de 
     padding: 2rem; 
 }
 
+h2{
+    display: flex;
+    justify-content: center;
+}
+
+.text-box{
+        display: flex;
+        justify-content: center;
+}
+
 .scroll-text{
     /* for å få denne til å scrolles, må må den ha avstand mellom elementene + sette max-widde 50 bokstaver 
     Auto er for sidene. Mens resten er oppe og nede vh */
     margin: 50vh auto; 
     max-width: 50rem;
     padding: 5rem;
-    color: #000;
+    color: #000000;
     font-size: large;
-    background-color: rgba(208, 206, 206, 0.8); /* Må finne ut hvordan få hvit boks bak for økt lesbarhet og fjerne de hvite kantene. */ 
 }
 
-.scroll-text p {
-    
-}
-
-#bakgrunn-2{
+.scroll-text-top{
+    margin: 0 auto;
+    width: 100%;
+    max-width: 30rem;
     clear: both;
-    width: 100vw;
-    height: 180vh;
+    font-size: calc(2rem - 2px);
     display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
     justify-content: center;
-    align-items: center;
-    /* background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Map_of_Scandinavia.svg/1020px-Map_of_Scandinavia.svg.png); */ 
-    background-size: cover;
-    background-position: center center;
 }
 
 .scroll-container .scroll-text{
@@ -159,12 +164,17 @@ h2 .scroll-text{ /* Endre på størrelsen, vil ikke ha alle lik padding. Kun de 
     justify-content: center;
 }
 
-
-#mychart {
-  background-size: contain;
-  background-position: 50%;
-  background-repeat: no-repeat;
-  background: rgba(255, 255, 255, 0.8); 
+#barChart, img{
+    width: 100%;
+    max-width: 50rem;
+    margin: 0 auto;
+    clear: both;
+    font-size: calc(2rem - 2px);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    padding: 5vh;
 }
 
 /* nth-child (odd) : 
@@ -184,6 +194,11 @@ nyttflagg{
     }
     #introduction{
         
+    }
+
+    h2{
+        display: flex;
+        flex-wrap: wrap;
     }
 
     header {
