@@ -98,18 +98,6 @@ h2{
     justify-content: center;
 }
 
-#bakgrunn-2{
-    clear: both;
-    width: 100vw;
-    height: 180vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Map_of_Scandinavia.svg/1020px-Map_of_Scandinavia.svg.png); */ 
-    background-size: cover;
-    background-position: center center;
-}
-
 .scroll-container .scroll-text{
     background-repeat: no-repeat;
     background-position: center;
