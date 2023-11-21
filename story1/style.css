@@ -72,13 +72,20 @@ h2 .scroll-text{ /* Endre på størrelsen, vil ikke ha alle lik padding. Kun de 
     margin: 50vh auto; 
     max-width: 50rem;
     padding: 5rem;
-    color: #000;
+    color: #000000;
     font-size: large;
-    background-color: rgba(239, 239, 239, 0.8); /* Må finne ut hvordan få hvit boks bak for økt lesbarhet og fjerne de hvite kantene. */ 
 }
 
-.scroll-text p {
-    
+.scroll-text-top{
+    margin: 0 auto;
+    width: 100%;
+    max-width: 30rem;
+    clear: both;
+    font-size: calc(2rem - 2px);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
 }
 
 #bakgrunn-2{
@@ -160,8 +167,17 @@ h2 .scroll-text{ /* Endre på størrelsen, vil ikke ha alle lik padding. Kun de 
 }
 
 
-#mychart {
-
+#barChart, img{
+    width: 100%;
+    max-width: 50rem;
+    margin: 0 auto;
+    clear: both;
+    font-size: calc(2rem - 2px);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20vh;
 }
 
 /* nth-child (odd) : 

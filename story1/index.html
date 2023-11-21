@@ -13,7 +13,7 @@
     </head>
     <body>
         <header role="banner">
-            <nav>
+            <nav id="#scrollToTop">
                 <h1>De hemmelige snuserne</h1>
                 <a href="#introduction">Start historien</a>
                 <a href="#mychart">Hvem topper listen i skandinavia?</a>
@@ -22,19 +22,18 @@
         </header>
 
         <section class="scroll-container" id="introduction">
-            <section class="text-section" id="bakgrunn2">
-                <section class="text-box">
-                    <p>Svenskene har gitt verden ABBA, IKEA og, selvfølgelig, snusen. Nordmenn omfavner det som om det var brunost, men hva med Island? Er det en hemmelig snusning som foregår i islendingenes bakgårder?</p>
-                </section> <!---Vurdere mer fengende h-tags -->
-            </section>
-
-            <div class="scroll-text-top"><h2>Island, landet med geysirer og majestetiske fossefall, skiller seg ut når det kommer til snusvaner. Er det på grunn av noe magisk fjellvann eller kanskje trollene som bebor øya? Vel, kanskje ikke, men det kan hende at lovene har en finger med i spillet. </h2></div>
             <section class="text-box">
                 <h2 class="overskrift-finland">Finland Satser på Snusfri Fremtid: Målet er Under 5% Brukere innen 2030</h2>
                 <p>I praksis jobber det finske helsedepartementet hardt for å sikre at færre enn 5 prosent av den voksne befolkningen i Finland bruker snus og lignende produkter innen 2030. Allerede i 1995, da Finland ble medlem av EU, ble det forbudt å selge snus i landet. I dag, i 2023, er Sverige det eneste EU-landet der det er tillatt å selge snus.<br> <br><a href="https://www.tv2.no/direkte/jpybz/siste-nytt/63ee3b50510b0ec62933053e/vil-gjore-finland-tobakksfri-innen-2030-foreslar-forbud-mot-snusimport">Finland er på en tydelig kurs mot en snusfri framtid, </a>og det ser ut til at de holder fast ved sitt engasjement for en tobakksfri befolkning.</p>
-                <h2>Snusfenomenet i Norden: En Oversikt</h2>
+            </section>
+            <section class="text-section" id="bakgrunn2">
+                <section class="text-box">
+                    <h2>Den forbudte snusen - i Skandinavia</h2>
+                    <p>Svenskene har gitt verden ABBA, IKEA og, selvfølgelig, snusen. Nordmenn omfavner det som om det var brunost, men hva med Island? Er det en hemmelig snusning som foregår i islendingenes bakgårder?</p>
+                </section> 
             </section>
             <div class="text-section" id="skipToChart">
+                <h2>Snusfenomenet i Norden: En Oversikt</h2>
                         <canvas id="mychart">
                             <p>Barchart laget med <a href="chartjs.org"></p></a>
                         </canvas>
@@ -48,12 +47,25 @@
 
             <div class="scroll-text"><p>Ifølge Helsedirektoratet rapporterer rundt 15 prosent av befolkningen i Norge, i aldersgruppen 16–74 år, daglig bruk av snus i 2022.</p><img src="flags/norway-flag-icon.png">Bildet hentet fra <a href="uxwing.com/">UX-wing </a>&copy;</div>
             <div class="scroll-text"><p>SSB.no konkluderer med at Norge leder over svenskene, med 15% nordmenn som snuser sammenlignet med totalt 12% i Sverige, basert på tall fra 2018 statistiska centralbyrån. </p><img src="flags/sweden-flag-icon.png">Bildet hentet fra <a href="uxwing.com/">UX-wing </a>&copy;</div>
-            <div class="scroll-text"><p>I Danmark bruker seks prosent av alle mellom 15 og 24 år pulverisert tobakk eller tyggetobakk, til tross for et salgsforbud i følge snusinfo.no.</p><img src="flags/denmark-flag-icon.png">Bildet hentet fra <a href="uxwing.com/">UX-wing </a>&copy;</div>
+            <div class="scroll-text"><p>I Danmark bruker seks prosent av alle mellom 15 og 24 år pulverisert tobakk eller tyggetobakk, til tross for et salgsforbud i følge snusinfo.no.</p><img src="flags/denmark-flag-icon.png">Bildet hentet fra <a href="uxwing.com/">UX-wing</a>&copy;</div>
             <div class="scroll-text"><p>I Finland, hvor salg av snus ikke er tillatt, nevner Snusinfo at likevel fem prosent av finske menn snuser, noe som kan bidra til det generelt høye forbruket av tobakk.</p><img src="flags/finland-flag-icon.png">Bildet hentet fra <a href="uxwing.com/">UX-wing </a>&copy;</div>
-            <div class="scroll-text"><p>Ruv.is avslører at 22% av unge islendinger snuser, og 1 av 3 av dem gjør det daglig. Islandske myndigheter bekrefter dette snusfenomenet, men hvorfor holder de det så hemmelig? Er snusforbudet et dekke for øyas sanne snusidentitet?</p><img src="flags/iceland-flag-icon.png">Bildet hentet fra <a href="uxwing.com/">UX-wing </a>&copy;</div> <!---Legge inn svg flagg av hvert land -->
+            <div class="scroll-text"><p>Ruv.is avslører at 22% av unge islendinger snuser, og 1 av 3 av dem gjør det daglig. Islandske myndigheter bekrefter dette snusfenomenet, men hvorfor holder de det så hemmelig? Er snusforbudet et dekke for øyas sanne snusidentitet?</p><img src="flags/iceland-flag-icon.png">Bildet hentet fra <a href="uxwing.com/">UX-wing </a>&copy;</div>
             
         
-            <button class="scroll-button" id="scrollToTop">Til toppen</button>
-    </body>
+            
+            <section class="text-section" >
+                <section class="text-box">
+                    <h2>Bekreftet: mindre tobakksforbruk hos Islendingene:</h2>
+                </section>
+                <img src="./tobac_data/tabac_2021.png" id="barChart">
+            </section>
+
+            <section class="text-box">
+                <h2 class="overskrift-finland">Hva blir fremtiden for snus på Island?</h2>
+                <p>Hvem vet hva som skjer med snusforbruket på Island? Kanskje er det som er forbudt, nettopp det som gjør det hele litt mer spennende? Så kjære Island, kanskje det er på tide å si "Slipp Island fri!" fra snusforbudet og gi folket sjansen til å velge sin egen nikotineventyr. Stay tuned for den smakfulle utviklingen! 🌋🚬</p>
+            </section>
+            <a href="#" id="scrollToTop" class="scroll-text-top">Til toppen</a>
+            </section>
+        </body>
     <script src="snus.js"></script>
 </html>
