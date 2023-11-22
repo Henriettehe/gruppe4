@@ -73,13 +73,14 @@ p {
   
   
   
-/* Finne eget bilde til malingen og av vårt intervjuobjekt!  */ 
+/* Finne eget bilde til malingen og av vårt intervjuobjekt! 
+ Må få ordnings på å få bakgrunn kun på denne seksjonen */ 
 #police .parallax-text{
   background-image: url("./img/police.jpg");
   background-size: cover;
   background-position: center;
-  color: white; /* Add text color or other styles as needed */
-  padding: 20px; /* Add padding to improve text visibility */
+  color: white; 
+  padding: 20px; 
 }
 
 /* IMAGE CLASSES */
@@ -162,7 +163,6 @@ img.right {
   #myVideo{
     position: fixed;
     bottom: 0;
-    max-width: 350vh;
     z-index: -1;
   }
   /* style the groups
