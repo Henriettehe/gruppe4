@@ -1,10 +1,14 @@
   /* Lagt inn klassen, og endret på teksten for første header */
   .title{
     font-size: 8rem;
-    text-shadow: #000;
     color: #fff; 
     font-weight: bolder;
-    /* Text-tranform/animate for en kul effekt?  */ 
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
   }
 
   .parallax {
@@ -24,6 +28,10 @@
     transform-style: preserve-3d;
   }
 
+  #group1 .parallax__layer--base{
+    background-image: url("../img/liggende-drone.mp4");
+  }
+
   .parallax__layer {
     position: absolute;
     top: 0;
@@ -34,28 +42,10 @@
 
   /* Trenger ikke alt dette??? :)  */ 
 
-  .parallax__layer--fore {
-    -webkit-transform: translateZ(90px) scale(.7);
-    transform: translateZ(90px) scale(.7);
-    z-index: 1;
-  }
-
   .parallax__layer--base {
     -webkit-transform: translateZ(0);
     transform: translateZ(0);
     z-index: 4;
-  }
-
-  .parallax__layer--back {
-    -webkit-transform: translateZ(-300px) scale(2);
-    transform: translateZ(-300px) scale(2);
-    z-index: 3;
-  }
-
-  .parallax__layer--deep {
-    -webkit-transform: translateZ(-600px) scale(3);
-    transform: translateZ(-600px) scale(3);
-    z-index: 2;
   }
 
   .container {
@@ -81,15 +71,15 @@ p {
     background-size: cover;
   }
   
-  .parallax-text p {
-    background: rgba(255, 255, 255, 0.8);
-    padding: 1rem;
-    margin: 70vh auto;
-  }
   
-/* Finne eget bilde til malingen */ 
-#police {
-    background-image: url("img/police.jpg");
+  
+/* Finne eget bilde til malingen og av vårt intervjuobjekt!  */ 
+#police .parallax-text{
+  background-image: url("./img/police.jpg");
+  background-size: cover;
+  background-position: center;
+  color: white; /* Add text color or other styles as needed */
+  padding: 20px; /* Add padding to improve text visibility */
 }
 
 /* IMAGE CLASSES */
@@ -157,10 +147,11 @@ img.right {
   body, html {
     overflow: hidden;
     scroll-behavior: smooth;
+    font: 100% / 1.5 Arial;
   }
 
-  body {
-    font: 100% / 1.5 Arial;
+  .container p{
+    font-size: 20px;
   }
 
   * {
@@ -168,18 +159,11 @@ img.right {
     padding:0;
   }
 
-  .parallax {
-    font-size: 200%;
-  }
-
-   /* centre the content in the parallax layers */
-  .title {
-    text-align: center;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
+  #myVideo{
+    position: fixed;
+    bottom: 0;
+    max-width: 350vh;
+    z-index: -1;
   }
   /* style the groups
   --------------------------------------------- */
@@ -194,7 +178,7 @@ img.right {
 
   /* TRenger kanskje ikke alt dette! */ 
   #group1 .parallax__layer--base {
-    background: rgb(102,204,102);
+    background-image: url("../img/liggende-drone.mp4");
   }
 
   #group2 {
