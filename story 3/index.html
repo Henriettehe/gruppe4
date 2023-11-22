@@ -1,9 +1,8 @@
 <!DOCTYPE html>
 <html lang="no">
     <head>
-        <meta charset="utf-8">
+        <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        </div>
         <meta name="description" content="Av gruppe 4, eksamen i kommunikasjonsdesig for Høyskolen i Østfold, November 2023.">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="style.css" media="all">
@@ -36,17 +35,17 @@
             </div>
 
             <div class="most-popular">
-                <img src="worldsmostpopular.png" alt="illustration">
+                <img src="img/worldsmostpopular.png" alt="illustration">
             </div>
             
             <div id="map"></div>
         </section> 
         <script>
-            var map = 
-            L.map('map').setView([59.2664, 10.4076], 10);
+            var map = L.map('map').setView([59.1279455, 11.3438203], 12);
 
-            L.titleLayer('https://{$}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-                attribution: 'Openstreetmap contributors'
+            L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                maxZoom: 19,
+                atribution:' <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
             }).addTo(map);
             
         </script>

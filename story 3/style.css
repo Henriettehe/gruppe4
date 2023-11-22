@@ -55,5 +55,7 @@ head {
 }
 
 #map{
-    height: 400px;
+    width: 100%;
+    max-width: 50rem;
+    height: 40rem;
 }
