@@ -6,9 +6,9 @@
     text-align: center;
     position: absolute;
     left: 50%;
-    top: 50%;
-    -webkit-transform: translate(-50%, -50%);
+    top: 80%;
     transform: translate(-50%, -50%);
+    white-space: nowrap;
   }
 
   .parallax {
@@ -51,7 +51,7 @@
   .container {
     width: 100%;
     max-width: 2400px;
-    margin: 0 auto;
+    margin-top: 400px;
 }
 
 p {
@@ -63,7 +63,7 @@ p {
   
   .parallax-text {
     width: 90%;
-    margin: 2rem auto;
+    margin-top: 2rem auto;
     padding: 5rem 0 5rem 0;
     min-height: 100vh;
     background-attachment: fixed;
@@ -162,8 +162,8 @@ img.right {
 
   #myVideo{
     position: fixed;
-    bottom: 0;
     z-index: -1;
+    bottom: -321px;
   }
   /* style the groups
   --------------------------------------------- */
@@ -193,4 +193,16 @@ img.right {
     font-size:80%;
     text-align:center;
     width: 100%;
+  }
+
+  @media only screen and (max-width: 600px) {
+    .title{
+      font-size: 5rem;
+      top: 60%;
+      white-space: normal;
+    }
+
+    #myVideo{
+      bottom: -160px;
+    }
   }
