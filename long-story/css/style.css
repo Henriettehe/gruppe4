@@ -144,10 +144,6 @@ img.right {
     transition: transform 0.5s;
   }
 
-
-  /* demo styles
-  --------------------------------------------- */
-
   body, html {
     overflow: hidden;
     scroll-behavior: smooth;
