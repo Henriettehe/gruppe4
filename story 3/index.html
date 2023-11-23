@@ -45,9 +45,44 @@
 
             L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
                 maxZoom: 19,
-                atribution:' <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+                attribution:' <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
             }).addTo(map);
-            
+
+            var redIcon = new L.Icon ({
+                iconUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/images/marker-icon-red.png',
+                    iconSize: [25, 41],
+                    iconAnchor: [12, 41],
+                    popupAnchor: [1,-34],
+                    tooltipAnchor: [16, -28],
+                    shadowSize: [41, 41]
+            });
+
+            var blueIcon = new L.Icon ({
+                iconUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/images/marker-icon.png',
+                    iconSize: [25, 41],
+                    iconAnchor: [12, 41],
+                    popupAnchor: [1,-34],
+                    tooltipAnchor: [16, -28],
+                    shadowSize: [41, 41]
+            })
+
+            var østgaardskogen = L.marker([59.1279455, 11.3438203], {icon: blueIcon}).addTo(map);
+            østgaardskogen.bindTooltip("Østgaardsskogen Discgolfbane").openTooltip();
+            østgaardskogen.bindPopup("<h2>Østgaardsskogen Discgolfbane</h2><p>Professionell nivå discgolfbane i Halden</p>").openPopup();
+
+            var sandbakken = L.marker([59.2487362, 11.1711782], {icon: redIcon}).addTo(map);
+            sandbakken.bindTooltip("Sandbakken Skolebane").openTooltip();
+            sandbakken.bindPopup("<h2>Sandbakken Skolebane</h2><p>Nybegynner nivå discgolfbane i Sandbakken, Sarpsborg</p>").openPopup();
+
+            var glenshølen = L.marker([59.2880908, 11.1161077], {icon: redIcon}).addTo(map);
+            glenshølen.bindTooltip("Glenshølen DiscgolfPark").openTooltip();
+            glenshølen.bindPopup("<h2>Glenshølen DiscgolfPark</h2><p>Nybegynner og amatør nivå Discgolfbane i Sarpsborg</p>").openPopup();
+
+            var øya = L.marker([59.3033402, 11.1485354], {icon: blueIcon}).addTo(map);
+            øya.bindTooltip("Øya DiscgolfPark").openTooltip();
+            øya.bindPopup("<h2>Øya DiscgolfPark</h2><p>Professionell nivå discgolf bane i Sarpsborg</p>").openPopup();
+            //Kilder som var brukt med kart, Marius sin tutorial for map_basics og leafletjs.com//
+
         </script>
     </body>
 </html>
