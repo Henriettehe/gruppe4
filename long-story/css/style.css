@@ -62,7 +62,7 @@ p {
   }
   
   .parallax-text {
-    width: 90%;
+    width: 100%;
     margin-top: 2rem auto;
     padding: 5rem 0 5rem 0;
     min-height: 100vh;
@@ -115,8 +115,7 @@ img.right {
   margin: 0 0 1rem 1rem;
 }
 
-  /* Debugger styles - used to show the effect
-  --------------------------------------------- */
+  /* Denne må være med, for at alt skal funke */
 
   .debug {
     position: fixed;
