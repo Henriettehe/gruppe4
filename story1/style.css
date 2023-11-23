@@ -52,8 +52,7 @@ a{
     width: 100vw;
     min-height: 60vh;
     overflow: hidden; 
-    transition: background-image 1s; /* Bygd inn fade-in fade out */
-}
+    }
 
 .scroll-text-top{
     margin: 50vh auto; 
@@ -68,7 +67,6 @@ h2 .scroll-text{ /* Endre på størrelsen, vil ikke ha alle lik padding. Kun de 
 
 h2{
     display: flex;
-    justify-content: center;
 }
 
 .text-box{
@@ -86,10 +84,20 @@ h2{
     font-size: large;
 }
 
+.scroll-text-flag{
+    /* for å få denne til å scrolles, må må den ha avstand mellom elementene + sette max-widde 50 bokstaver 
+    Auto er for sidene. Mens resten er oppe og nede vh */
+    margin: 30vh auto; 
+    max-width: 50rem;
+    padding: 5vh;
+    color: #000000;
+    font-size: larger;
+}
+
 .scroll-text-top{
     margin: 0 auto;
     width: 100%;
-    max-width: 30rem;
+    max-width: 50rem;
     clear: both;
     font-size: calc(2rem - 2px);
     display: flex;
@@ -98,6 +106,7 @@ h2{
     justify-content: center;
 }
 
+
 .scroll-container .scroll-text{
     background-repeat: no-repeat;
     background-position: center;
@@ -105,12 +114,12 @@ h2{
 }
 
 /* For å få bildene til å flyte annen hver gang til hver sin side */ 
-.scroll-text:nth-child(odd) {
+.flag:nth-child(odd) {
     float: right;
     border-radius: 10px 10px 10px 10px;
 }
 
-.scroll-text:nth-child(even){
+.flag:nth-child(even){
     float: left;
 }
 
@@ -164,7 +173,7 @@ h2{
     justify-content: center;
 }
 
-#barChart, img{
+#barChart{
     width: 100%;
     max-width: 50rem;
     margin: 0 auto;
@@ -177,32 +186,34 @@ h2{
     padding: 5vh;
 }
 
-/* nth-child (odd) : 
-float: right
-
-
-nyttflagg{ 
-    float: left. 
-    */ 
-
-
-
+.flag{
+    padding: 1rem;
+}
 
 @media only screen and (min-width: 550px) {
     body{
         margin: 0;
     }
-    #introduction{
-        
+    .scroll-text-flag{
+        margin: 0;
+        display: flex;
+    }
+
+    .overskrift-finland{
+        margin-top: 30vh;
     }
 
     h2{
         display: flex;
         flex-wrap: wrap;
+        margin: 0;
+        padding: 0;
     }
 
     header {
-        padding: 0 1rem 0 1rem;
+        padding: 0;
+        height: 150vh;
+        margin: 0;
     }
 
     header nav a {
@@ -211,13 +222,13 @@ nyttflagg{
         justify-content: space-around;
     }
 
-    #bakgrunn-2{
-        display: flex;
-        flex-wrap: wrap;
+    nav{
+        gap: .5rem;
     }
 
     #mychart{
-        display: block;
+        padding: 0rem;
+        margin-right: .5rem;
     }
 
     #mychart:hover{
@@ -225,6 +236,6 @@ nyttflagg{
     }
 
     .text-box{
-
+        padding: 8vh;
     }
 }            

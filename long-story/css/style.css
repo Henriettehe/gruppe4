@@ -1,20 +1,18 @@
- /* Parallax base styles
-  --------------------------------------------- */
-
-
   /* Lagt inn klassen, og endret på teksten for første header */
   .title{
     font-size: 8rem;
-    text-shadow: #000;
     color: #fff; 
     font-weight: bolder;
-    /* Text-tranform/animate for en kul effekt */ 
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
   }
 
-  
-
   .parallax {
-    height: 500px; /* fallback for older browsers */
+    height: 500px; 
     height: 100vh;
     overflow-x: hidden;
     overflow-y: auto;
@@ -24,10 +22,14 @@
 
   .parallax__group {
     position: relative;
-    height: 500px; /* fallback for older browsers */
+    height: 500px;
     height: 100vh;
     -webkit-transform-style: preserve-3d;
     transform-style: preserve-3d;
+  }
+
+  #group1 .parallax__layer--base{
+    background-image: url("../img/liggende-drone.mp4");
   }
 
   .parallax__layer {
@@ -38,11 +40,7 @@
     bottom: 0;
   }
 
-  .parallax__layer--fore {
-    -webkit-transform: translateZ(90px) scale(.7);
-    transform: translateZ(90px) scale(.7);
-    z-index: 1;
-  }
+  /* Trenger ikke alt dette??? :)  */ 
 
   .parallax__layer--base {
     -webkit-transform: translateZ(0);
@@ -50,18 +48,72 @@
     z-index: 4;
   }
 
-  .parallax__layer--back {
-    -webkit-transform: translateZ(-300px) scale(2);
-    transform: translateZ(-300px) scale(2);
-    z-index: 3;
-  }
+  .container {
+    width: 100%;
+    max-width: 2400px;
+    margin: 0 auto;
+}
 
-  .parallax__layer--deep {
-    -webkit-transform: translateZ(-600px) scale(3);
-    transform: translateZ(-600px) scale(3);
-    z-index: 2;
+p {
+    width: 94%;
+    max-width: 30rem;
+    margin: 2rem auto;
+    font-size: 0.8rem;
   }
+  
+  .parallax-text {
+    width: 90%;
+    margin: 2rem auto;
+    padding: 5rem 0 5rem 0;
+    min-height: 100vh;
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+  }
+  
+  
+  
+/* Finne eget bilde til malingen og av vårt intervjuobjekt! 
+ Må få ordnings på å få bakgrunn kun på denne seksjonen */ 
+#police .parallax-text{
+  background-image: url("./img/police.jpg");
+  background-size: cover;
+  background-position: center;
+  color: white; 
+  padding: 20px; 
+}
 
+/* IMAGE CLASSES */
+/*
+ * .contained: Same size as paragraphs, follows the borders of the text
+ * .wide: full-width images, following the size of the .container
+ * .half (must be inside <p>, with .left or .right): half-width images, floating to either .left or .right side of the surrounding text
+ */
+img.contained {
+  width: 94%;
+  max-width: 30rem;
+  margin: 2rem auto;
+  font-size: 0.8rem;
+  display: block;
+}
+img.wide {
+  width: 90%;
+  height: auto;
+  margin: 1rem auto;
+  display: block;
+}
+img.half {
+  width: 50%;
+  height: auto;
+}
+img.left {
+  float: left;
+  margin: 0 1rem 1rem 0;
+}
+img.right {
+  float: right;
+  margin: 0 0 1rem 1rem;
+}
 
   /* Debugger styles - used to show the effect
   --------------------------------------------- */
@@ -95,10 +147,12 @@
 
   body, html {
     overflow: hidden;
+    scroll-behavior: smooth;
+    font: 100% / 1.5 Arial;
   }
 
-  body {
-    font: 100% / 1.5 Arial;
+  .container p{
+    font-size: 20px;
   }
 
   * {
@@ -106,77 +160,31 @@
     padding:0;
   }
 
-  .parallax {
-    font-size: 200%;
+  #myVideo{
+    position: fixed;
+    bottom: 0;
+    z-index: -1;
   }
-
-   /* centre the content in the parallax layers */
-  .title {
-    text-align: center;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-  }
-
-
-
   /* style the groups
   --------------------------------------------- */
 
   #group1 {
     z-index: 5; /* slide over group 2 */
   }
+
+  #group1-btm{
+    z-index: 5;
+  }
+
+  /* TRenger kanskje ikke alt dette! */ 
   #group1 .parallax__layer--base {
-    background: rgb(102,204,102);
+    background-image: url("../img/liggende-drone.mp4");
   }
 
   #group2 {
     z-index: 3; /* slide under groups 1 and 3 */
   }
-  #group2 .parallax__layer--back {
-    background: rgb(123,210,102);
-  }
-
-  #group3 {
-    z-index: 4; /* slide over group 2 and 4 */
-  }
-  #group3 .parallax__layer--base {
-    background: rgb(153,216,101);
-  }
-
-  #group4 {
-    z-index: 2; /* slide under group 3 and 5 */
-  }
-  #group4 .parallax__layer--deep {
-    background: rgb(184,223,101);
-  }
-
-  #group5 {
-    z-index: 3; /* slide over group 4 and 6 */
-  }
-  #group5 .parallax__layer--base {
-    background: rgb(214,229,100);
-  }
-
-  #group6 {
-    z-index: 2; /* slide under group 5 and 7 */
-  }
-  #group6 .parallax__layer--back {
-    background: rgb(245,235,100);
-  }
-
-  #group7 {
-    z-index: 3; /* slide over group 7 */
-  }
-  #group7 .parallax__layer--base {
-    background: rgb(255,241,100);
-  }
-
-
-  /* misc
-  --------------------------------------------- */
+  
   .demo__info {
     position: absolute;
     z-index:100;

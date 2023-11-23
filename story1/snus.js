@@ -9,7 +9,7 @@ const data = {
     {
       /* Husk å oppdatere data verdiene. */
       label: '% prosentvis hvem snuser mest?',
-      data: [7, 6, 23, 12, 9],
+      data: [15, 12, 6, 5, 4],
       borderWidth: 1,
       backgroundColor: [
         '#EF3340',
@@ -50,3 +50,4 @@ new Chart(ctx, {
     },
   },
 });
+
