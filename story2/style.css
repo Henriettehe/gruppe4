@@ -28,12 +28,12 @@ body, html {
   max-width: 100%; 
 }
 
-
+/* Oppdatert skriftstørrelsen */ 
 p {
     width: 94%;
     max-width: 30rem;
     margin: 2rem auto;
-    font-size: 0.8rem;
+    font-size: 1rem;
     padding: 1rem;
     line-height: 10vh;
     color: white;
@@ -64,9 +64,7 @@ p {
 
 /* Et forsøk på å få text og bilde ved siden av hverandre. Snakker til de ulike klassene i indexen */
 .bilde-and-text {
-  display: flex;
-  align-items: flex-start; 
-  justify-self: space-between;
+
   max-width: 100%;
 }
 
@@ -84,15 +82,20 @@ p {
     display: block;
 }
 
-.text{
-    width: 40%; 
+.bilde-and-text{
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
 }
 
+/* Justert bilde fra forskningen */ 
 .cvd {
-  width: 70%; 
-  height: auto; 
-  margin-right: 20px; 
-  padding: 1rem;
+    margin-right: 20px;
+    padding: 1rem;
+    max-width: 20rem;
 }
 
 .graftext {
@@ -129,7 +132,6 @@ img.left {
   float: left;
   margin: 0 1rem 1rem 0;
 }
-
 
 #ose
 {
@@ -215,8 +217,7 @@ img.ekstra {
   margin: 0;
   padding: 0;
 }
-  
-}
+
 .graftext{
     margin-top: 0;
 }
@@ -225,4 +226,8 @@ img.ekstra {
     padding: 0;
 }
 
+
 }
+
+
+
