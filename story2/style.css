@@ -24,6 +24,7 @@ body, html {
 }
 
 #myVideo {
+    /* Inni her kan vi legge inn video som en url() og som en bakgrunn */ 
   width: 100%; 
   max-width: 100%; 
 }
