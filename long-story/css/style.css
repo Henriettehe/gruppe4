@@ -95,7 +95,7 @@ img.contained-2{
 
 img.contained-3{
   max-width: 30rem;
-  max-height: 50rem;
+  max-height: 50.5rem;
   margin: 2rem auto;
   display: block;
 }
@@ -166,12 +166,12 @@ img.right {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 10vh;
+    padding: 1rem 0;
   }
 
   .joakim-intro{
     display: flex;
-    margin-top: 30vh;
+    margin-top: 20vh;
     flex-wrap: wrap;
     padding-top: 5vh;
   }
@@ -182,6 +182,8 @@ img.right {
 
   .joakim-intro h2{
     display: flex;
+    width: -webkit-fill-available;
+    place-content: center;
   }
 
   .container div h2{
@@ -198,26 +200,12 @@ img.right {
   #myVideo{
     position: fixed;
     z-index: -1;
-    bottom: -321px;
-  }
-  /* style the groups
-  --------------------------------------------- */
-
-  #group1 {
-    z-index: 5; /* slide over group 2 */
-  }
-
-  #group1-btm{
-    z-index: 5;
+    bottom: -371px;
   }
 
   /* TRenger kanskje ikke alt dette! */ 
   #group1 .parallax__layer--base {
     background-image: url("../img/liggende-drone.mp4");
-  }
-
-  #group2 {
-    z-index: 3; /* slide under groups 1 and 3 */
   }
   
   .demo__info {
