@@ -6,6 +6,10 @@ html {
     scroll-behavior: smooth;
 }
 
+body {
+
+}
+
 head {
     width: 100vw;
     height: 100vh;
@@ -58,4 +62,32 @@ head {
     width: 100%;
     max-width: 50rem;
     height: 40rem;
+}
+/*Timeline css hjelp fra https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_timeline*/
+.timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.timeline:: after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: white;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+}
+
+.container {
+    padding: 10px 40px;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+}
+
+.container {
+    
 }
