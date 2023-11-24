@@ -65,27 +65,6 @@ p {
     font-size: 0.8rem;
   }
   
-  .parallax-text {
-    width: 100%;
-    margin-top: 2rem auto;
-    padding: 5rem 0 5rem 0;
-    min-height: 100vh;
-    background-attachment: fixed;
-    background-position: center center;
-    background-size: cover;
-  }
-  
-  
-  
-/* Finne eget bilde til malingen og av vårt intervjuobjekt! 
- Må få ordnings på å få bakgrunn kun på denne seksjonen */ 
-#police .parallax-text{
-  background-image: url("./img/police.jpg");
-  background-size: cover;
-  background-position: center;
-  color: white; 
-  padding: 20px; 
-}
 
 a{
   text-decoration: none;
@@ -95,9 +74,6 @@ a{
   height: 400px;
 }
 
-.kart-design{
-  
-}
 
 .kart-design p{
   margin-bottom: 40px;
@@ -109,12 +85,21 @@ a{
   justify-content: center;
 }
 
-/* IMAGE CLASSES */
-/*
- * .contained: Same size as paragraphs, follows the borders of the text
- * .wide: full-width images, following the size of the .container
- * .half (must be inside <p>, with .left or .right): half-width images, floating to either .left or .right side of the surrounding text
- */
+/* Bilde klassene til de forskjellige bildene og plassering */
+
+img.contained-2{
+  max-width: 30rem;
+  margin: 2rem auto;
+  display: block;
+}
+
+img.contained-3{
+  max-width: 30rem;
+  max-height: 50rem;
+  margin: 2rem auto;
+  display: block;
+}
+
 img.contained {
   width: 94%;
   max-width: 30rem;
@@ -182,6 +167,21 @@ img.right {
     flex-direction: column;
     align-items: center;
     margin-top: 10vh;
+  }
+
+  .joakim-intro{
+    display: flex;
+    margin-top: 30vh;
+    flex-wrap: wrap;
+    padding-top: 5vh;
+  }
+
+  .joakim-intro p{
+    font-size: 20px;
+  }
+
+  .joakim-intro h2{
+    display: flex;
   }
 
   .container div h2{
