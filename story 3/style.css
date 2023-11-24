@@ -34,6 +34,15 @@ head {
     100% {opacity: 1;}
 }
 
+header {
+
+}
+
+h1 {
+    text-align: center;
+    color:whitesmoke;
+}
+
 .scroll-container {
     width: 100vw;
     min-height: 60vh;
@@ -42,11 +51,11 @@ head {
 }
 
 .scroll-text {
-    margin: 50 vh auto;
-    max-width: 50 rem;
+    margin: 50vh auto;
+    max-width: 50rem;
     padding: 1 rem;
-    background: 
-    color;
+    background: ;
+    color: whitesmoke;
 }
 
 .most-popular {
