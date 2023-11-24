@@ -91,6 +91,11 @@ a{
   text-decoration: none;
 }
 
+#map{
+  width: 100%;
+  height: 400px;
+}
+
 /* IMAGE CLASSES */
 /*
  * .contained: Same size as paragraphs, follows the borders of the text
