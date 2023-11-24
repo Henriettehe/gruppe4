@@ -91,11 +91,6 @@ a{
   text-decoration: none;
 }
 
-.container div #map{
-  width: 100%;
-  height: 400px;
-}
-
 #map{
   height: 400px;
 }
