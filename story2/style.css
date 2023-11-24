@@ -139,7 +139,6 @@ img.left {
   margin-top: 40px;
 }
 
-
 img.right {
   float: right;
   margin: 0 0 1rem 1rem;
@@ -149,11 +148,11 @@ img.right {
 .sitater h2{
   position: center;
   text-align: center;
+  color: white;
 }
 
 /* Oppdatert bildeverdien, slik at den ikke blir så stor og blir på siden av paragrafen */
 img.ekstra{
-    padding-left: 14vw;
     max-width: 116vh;
 }
 .stone {
@@ -197,10 +196,7 @@ img.ekstra{
     max-width: 100%;
   }
 
-  .img-extra{
-    padding-left: 0;
-  }
- 
+
 .cvd {
   width: 60%; 
   max-width: 100%; 
@@ -216,9 +212,10 @@ p{
 }
 
 img.ekstra {
-  float: left;
-  max-width: 100%;
-  margin-right: 7rem;
+  margin: 0;
+  padding: 0;
+}
+  
 }
 .graftext{
     margin-top: 0;
@@ -228,4 +225,4 @@ img.ekstra {
     padding: 0;
 }
 
-
+}
