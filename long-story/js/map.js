@@ -1,8 +1,7 @@
 //Dette er kart koden til XL story :) 
 //Kilde: Kartet er laget med Leaflet.js og er hentet fra https://leafletjs.com/examples/quick-start/
             
-document.addEventListener('DOMContentLoaded', function () {
-    var map = L.map('map').setView([50.5527238, 6.1237101], 8);
+            var map = L.map('map').setView([50.5527238, 6.1237101], 8);
 
             L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
                 maxZoom: 19,
@@ -20,4 +19,3 @@ document.addEventListener('DOMContentLoaded', function () {
             var newcastle = L.marker([55.0023443, -1.7392438]).addTo(map);
             newcastle.bindTooltip("Newcastle").openTooltip();
             newcastle.bindPopup("<h2>Top3 landene for Plain Air</h2><p>England</p>").openPopup();
-});
