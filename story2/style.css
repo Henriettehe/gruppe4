@@ -24,9 +24,11 @@ body, html {
 }
 
 #myVideo {
+    width: 100%; 
+    max-width: 100%; 
     /* Inni her kan vi legge inn video som en url() og som en bakgrunn */ 
-  width: 100%; 
-  max-width: 100%; 
+    background-image: url("");
+    background-size: cover;
 }
 
 /* Oppdatert skriftstørrelsen */ 
