@@ -9,17 +9,15 @@
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
         integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
         crossorigin=""/>
-
-        <div class="fade-in-text">
-            <title>Discgolf: Den nye store OL sport?</title>
-        </div>
-
         <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
                 integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
                 crossorigin="">
         </script>
     </head>
     <body>
+        <div class="fade-in-text">
+            <title>Discgolf: Den nye store OL sport?</title>
+        </div>
         <header>
             <h1>Hva er Discgolf og hvor populært er den egentlig?</h1>
         </header>
@@ -31,7 +29,8 @@
                     I år 2022, 19 millioner runder var registrert i appen, dette kan føles som en liten tall i hele verdens skala, men hvis du tenker når du første gang hørte om dette sport eller hvor mye du vet om denne sport, er kanskje 19 millioner satt i annen perspektiv nå.</p></div>
 
             <div class="scroll-text" style="background-image: url('')">
-                <h2>Discgolf er noen av de raskeste voksende sportene i hele Europa</h2>
+                <p>Discgolf er veldig liknende som regelmessig til Golf, vi bruker samme type ordene, som birdie og bogey. Poenget er å få disc inne i en kurv med minst mulig kast. Men motsatt av golf har discgolf mye billigere utstyr og mesteparten av banene er gratis å spille i. Dette hvordan discgolf ser ut som 
+                </p>
             </div>
             <div class="scroll-text" style="background-image: url('')">
                 <h2>Sporten fikk en kjempe stor boost under Covid-19, siden den er spilt utendørs og er lett å holde god avstand till andre folk</h2>
@@ -44,12 +43,24 @@
             
             <div id="map"></div>
             <!--timeline template og hjelp har jeg fått fra: https://www.w3schools.com/howto/howto_css_timeline.asp-->
-            <div class="timeline">
+        <div class="timeline">
                 <div class="container left">
                     <div class="content">
                         <h2>1975</h2>
                         <p>Ed "Steady Ed" Hadrick</p>
                     </div>
+                </div>
+            
+            <div class="container right">
+                <div class="content">
+                    <h2>1979</h2>
+                    <p>Robert Tjernstad</p>
+                </div>
+            </div>
+            <div class="container left">
+                <div class="content">
+                    <h2>1975</h2>
+                    <p>Ed "Steady Ed" Hadrick</p>
                 </div>
             </div>
             <div class="container right">
@@ -58,6 +69,19 @@
                     <p>Robert Tjernstad</p>
                 </div>
             </div>
+            <div class="container left">
+                <div class="content">
+                        <h2>1975</h2>
+                        <p>Ed "Steady Ed" Hadrick</p>
+                </div>
+            </div>
+            <div class="container right">
+                <div class="content">
+                    <h2>1979</h2>
+                    <p>Robert Tjernstad</p>
+                </div>
+            </div>
+        </div>
         </section> 
         <script>
             var map = L.map('map').setView([59.1279455, 11.3438203], 12);
