@@ -7,7 +7,8 @@ html {
 }
 
 body {
-
+  background-color: #474e5d;  
+  font-family: Helvetica, sans-serif;
 }
 
 head {
@@ -25,7 +26,7 @@ head {
 .fade-in-text {
     font-family: Arial;
     font-size: 150px;
-    animation: fadeIn 6s;
+    animation: fadeIn 2s;
 }
 
 @keyframes fadeIn {
@@ -45,7 +46,7 @@ head {
     max-width: 50 rem;
     padding: 1 rem;
     background: 
-    color:
+    color;
 }
 
 .most-popular {
@@ -70,11 +71,11 @@ head {
     margin: 0 auto;
 }
 
-.timeline:: after {
+.timeline::after {
     content: '';
     position: absolute;
     width: 6px;
-    background-color: white;
+    background-color: whitesmoke;
     top: 0;
     bottom: 0;
     left: 50%;
@@ -88,6 +89,87 @@ head {
     width: 50%;
 }
 
-.container {
-    
+.container::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: -17px;
+    background-color: whitesmoke;
+    border: 4px solid turquoise;
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.left {
+    left: 0;
+}
+
+.right {
+    left: 50%; 
+}
+
+.left::before {
+    content: '' '';
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    right: 30px;
+    border: medium solid white;
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent white;
+}
+
+.right::before {
+    content: '' '';
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    left: 30px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+}
+
+.right::after {
+    left: -16px;
+}
+
+.content {
+    padding: 20px 30px;
+    background-color: white;
+    position: relative;
+    border-radius: 6px;
+}
+
+@media screen and (max-width:600px) {
+    .timeline::after {
+        left: 31px;
+    }
+
+    .container {
+        width: 100%;
+        padding-left: 70px;
+        padding-right: 25px;
+    } 
+
+    .container::before {
+        left: 60px;
+        border: medium solid white;
+        border-width: 10px 10px 10px 0;
+        border-color: transparent white transparent transparent;
+    }
+
+    .left::after, .right::after {
+        left: 15px;
+    }
+
+    .right {
+        left:0%;
+    }
 }
