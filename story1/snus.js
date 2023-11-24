@@ -7,7 +7,7 @@ const data = {
   labels: ['Norge', 'Svergie', 'Danmark', 'Finland' ,'Island'],
   datasets: [
     {
-      /* Husk å oppdatere data verdiene. */
+      /* Oppdatert data verdiene basert på kildene, note: det var veldig lite pålitetlig data å finne på snusprosenten. Men for total tobakk konsumering, var det med pålitelig. Derfor er denne også inkludert i artikkelen. */
       label: '% prosentvis hvem snuser mest?',
       data: [15, 12, 6, 5, 4],
       borderWidth: 1,
