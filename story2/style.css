@@ -62,7 +62,8 @@ p {
   
 
 #hatt {
-    background-image: url("./hatt.jpg");
+    background-image: url("img/hatt.jpg");
+    width: 100%;
 }
 
 .bilde-and-text {
