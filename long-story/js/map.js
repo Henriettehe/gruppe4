@@ -1,4 +1,6 @@
 //Dette er kart koden til XL story :) 
+//Kilde: Kartet er laget med Leaflet.js og er hentet fra https://leafletjs.com/examples/quick-start/
+            
             var map = L.map('map').setView([50.5527238, 6.1237101], 8);
 
             L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
