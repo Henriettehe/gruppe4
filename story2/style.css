@@ -66,9 +66,22 @@ p {
     width: 100%;
 }
 
+/* Et forsøk på å få text og bilde ved siden av hverandre. Snakker til de ulike klassene i indexen */
 .bilde-and-text {
   display: flex;
   align-items: flex-start; 
+  justify-self: space-between;
+  max-width: 100%;
+}
+
+/* Sånn at de delene ikke skal ta hele plassen, men halvparten */ 
+.extra{
+    width: 50%;
+    max-width: 50%;
+}
+
+.text{
+    width: 40%; 
 }
 
 .cvd {
