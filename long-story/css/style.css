@@ -87,6 +87,10 @@ p {
   padding: 20px; 
 }
 
+a{
+  text-decoration: none;
+}
+
 /* IMAGE CLASSES */
 /*
  * .contained: Same size as paragraphs, follows the borders of the text
