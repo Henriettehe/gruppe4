@@ -16,7 +16,6 @@
   }
 
   .parallax {
-    height: 500px; 
     height: 100vh;
     overflow-x: hidden;
     overflow-y: auto;
@@ -26,7 +25,6 @@
 
   .parallax__group {
     position: relative;
-    height: 500px;
     height: 100vh;
     -webkit-transform-style: preserve-3d;
     transform-style: preserve-3d;
@@ -56,6 +54,7 @@
     width: 100%;
     max-width: 2400px;
     margin-top: 400px;
+    
 }
 
 
@@ -97,9 +96,17 @@ a{
 }
 
 .kart-design{
+  
+}
+
+.kart-design p{
+  margin-bottom: 40px;
   font-size: 20px;
-  margin-top: 400px;
-  align-items: center;
+}
+
+.kart-design h2{
+  display: flex;
+  justify-content: center;
 }
 
 /* IMAGE CLASSES */
@@ -131,7 +138,7 @@ img.left {
 }
 img.right {
   float: right;
-  margin: 0 0 1rem 1rem;
+  padding: 2rem;
 }
 
   /* Denne må være med, for at alt skal funke */
@@ -174,10 +181,13 @@ img.right {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 10vh;
   }
 
   .container div h2{
     margin-bottom: 10px;
+    align-items: center;
+    display: flex;
   }
 
   * {
