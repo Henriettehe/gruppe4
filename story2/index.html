@@ -1,64 +1,100 @@
 <!DOCTYPE html>
-<html lang="no">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Sauna time: hvor lenge kan du holde ut?</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <!DOCTYPE html>
-    <html lang="en">
-        <head>
-            <meta charset="utf-8">
-            <meta http-equiv="X-UA-Compatible" content="IE=edge">
-            <title>Sauna time: hvor lenge kan du holde ut?</title>
-            <meta name="description" content="Av gruppe 4, eksamen i kommunikasjonsdesig for Høyskolen i Østfold, November 2023.">
-            <meta name="viewport" content="width=device-width, initial-scale=1">
-            <link rel="stylesheet" href="style.css" media="all">
-            <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> 
-            <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
-            <!---Kopierer denne inn, for å få sånne kule visuelle charts. Hentet fra cdnj-->
-        </head>
-        <body>
-            <header>
-                <div>
-                    <h1>Sauna-time</h1>
-                    <a href="#introduction">Start the story</a>
-                    <a href="#winners">Skip to winners!</a>
-                    <a href="#bigmap">See the map, over championsships</a>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>En Badstu Maraton</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Nunito:wght@700;900&display=swap" rel="stylesheet"> 
+    <link href="style.css" rel="stylesheet" media="all">
+</head>
+<body>
+
+    <header>
+        <div>
+            <div class="stone">
+                <video autoplay muted loop id="myVideo">
+                    <source src="/img/smokingstone.mp4" type="video/mp4">
+                </video>
+                <div class="header-content">
+                    <h1>En Badstu Maraton</h1>
+                    <i>Hvor lenge kan du sitte?</i>
                 </div>
-            </header>
-            <section class="scroll-container" id="introduction">
-                <div class="scroll-text"><p>TEmpraturen er 90Celius</p></div>
-                <!---Dynamisk verdi? for å putte inn vinnere? + image. For nå ble det ulike flag :) -->
-                <div class="scroll-text"><p><strong><span class="flag-icon flag-icon-gbr"></span></strong> <img src="./img/kortvideo_Cdi7B41c.gif"></p></div>
-
-
-               
-
-                    <div class="scroll-text"><p>Finske kaller det löyly</p></div>
-               
-
-                   <div class="scroll-text"><p>  Hjerte slår raskere for å kjøpe ned kroppes</p></div>
-
-                   <div class="scroll-text"><p><strong><span class="flag-icon flag-icon-gbr"></span></strong> <img src="./img/hjerte.pumper.gif"></p></div>
-
-
-            </section>       
-            <section class="text-section" id="winners">
-                <h2>These are the formula 1 champions: </h2>
-                <div style="min-height:433px"><script type="text/javascript" defer src="https://datawrapper.dwcdn.net/PM9Td/embed.js?v=1" charset="utf-8"></script><noscript><img src="https://datawrapper.dwcdn.net/PM9Td/full.png" alt="" /></noscript></div>
-            </section>
-            <section class="text-section" id="bigmap">
-                <h2>Here is a map over where the championsships where: </h2>
-                <button id="map-btn"><a href="map.html">Here is the map </a></button>
-            </section>
             </div>
+        </div>
+    </header>
 
+
+
+
+    <article class="container">
+        <p><img src="img/kortvideo_Cdi7B41c.gif" alt="ose" class="half right">En øse til og en øse til. I Finland kaller de det å kaste vann på steinene "Löyly" Varmen stiger til 90 celsius, kroppen blir varmere. Hjerte slår raskere og raskere. Hva skjer egentlig med kroppen når man sitter inne i et klima som er nærmere kokepunktet? Og hvor lenge kan man oppholde seg der?
+          </p>
+            <h2>
+                Hva er Sauna? 
+            </h2>
+        <p> Hvorfor er Sauna blitt en sånn trend, og hva skjer med kroppen når man befinner seg i en badstu. Men først kort historie om badstu.
             
-                
-    </html>
-    </body>
+            </p><img src="img/sauna.hus.jpg" alt="sauna house" class="ekstra">
+
+        <p>I Finland omtaler de badstu som sauna, i Amerika sier de sweat lodge. I Tyrkia omtaler de det som hammam, og i  Russland heter det banja. Formålet er det samme. Varme opp kroppen og svette!
+
+            </p>
+
+
+
+        <p>Det finske folkeslaget er kanskje det vi assosierer mest med badstu. Finnene ser ikke på badstu som en luksus, men som en nødvendighet. Det bor over 5 millioner mennesker i Finland og 3 millioner av dem har hver sin badstu!</p>
+
+        <img src="miikka-luotio-Z731uJaM5lM-unsplash.jpg" alt="hatt" class="wide">
+
+        <p>Mange forbinder badstu med velvære og avkobling. Det har også bevist å ha flere helsefremmende effekter. Men da krever det at du bruker badstu jevnt 2-3 ganger i uken.
+        </p>
+        
+        <div class="bilde-and-text">
+          <img src="./grafcvd.png" class="cvd">
+          <p class="graftext">Ifølge et <a href="https://www.nature.com/articles/nrcardio.2015.35">forskningsprojekt</a>
+             med 2315 menn mellom 42-62 år. Langtidsstudiet som gikk fra 1984-1989. Der de delte opp gruppene. Den ene gruppen tok badstu 1 gang i uken, den andre tok badstu 2-3 ganger i uken og den siste gruppen tok badstu 4-5 ganger i uken.
+             forskerne så en sammenheng med antall badstu økter i uken, i forhold til reduksjon av hjerte-og karsykdommer.
+            
+          </p>
+        </div>
+        <p>
+             De som tok badstu en gang i uken, var det ingen forskjell. de som tok 2-3 ganger i uken hadde redusert risikoen for hjerte-og karsykdommer, mens de som tok badstu 4-5 ganger i uken så man en signifikant redusert risiko for hjerte-og karsykdommer. badstu er ikke bare digg! det er også helsefremmende,
+          </p>
+
+          <img src="./heart.blue.jpeg" alt="sauna" class="contained">
+
+        <p>Men en badstue kan også ha negative helseeffekter. I de mest alvorlige tilfeller kan det forårsake hjertestans og død! Badstu kan føre til utmattelse, hypertermi og heteslag. Derfor er det viktig å forhøre seg med legen hvis man har underliggende sykdommer.</p>
+        <img src="IMG_20231019_171049.jpg" alt="sauna" class="contained">
+        
+        <p>Badstu toleransen er som en muskel den må trenes opp. Er du ny på badstu er ca 10-15 minutter nok. etterhvert som man blir sterkere kan tiden i badstuen økes mellom 20-30 minutter.</p>
+       
+
+      <div class="sitater">
+        <h2>Sitater fra badstu brukeren
+        </h2>
+      </div>
+        <section class="parallax" id="hatt">
+            <p>«Du kutter deg bort fra verden!»</p>
+            <p>«Du velger å slappe av!»</p>
+            <p>«Neagtive tanker eksisterer ikke!»</p>
+            <p><i>«Nei nå må jeg ta en dukkert!»</i></p>
+        </section>
+      
+    <div>
+        <div class="bade">
+            <video autoplay muted loop id="myVideo">
+                <source src="./bade.not.blurry.mp4" type="video/mp4">
+            </video>
+        </div>
+    </div>
+  </article>   
+</section>
+</body>
 </html>
