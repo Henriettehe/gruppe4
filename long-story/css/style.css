@@ -58,6 +58,7 @@
     margin-top: 400px;
 }
 
+
 p {
     width: 94%;
     max-width: 30rem;
@@ -93,6 +94,12 @@ a{
 
 #map{
   height: 400px;
+}
+
+.kart-design{
+  font-size: 20px;
+  margin-top: 400px;
+  align-items: center;
 }
 
 /* IMAGE CLASSES */
