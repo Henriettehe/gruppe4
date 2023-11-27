@@ -26,7 +26,7 @@ body {
 }
 
 .fade-in-text {
-    font-size: 150px;
+    font-size: 15vh;
     opacity: 0;
     animation: fadeIn 6s forwards;
 }
@@ -51,12 +51,14 @@ h1 {
 }
 
 .scroll-text {
-    margin: 30vh auto;
+    margin: 20vh auto;
     padding: 1 rem;
     color: white;
     flex-direction: column;
     align-items: center;
     flex-wrap: wrap;
+    padding-left: 2rem;
+    padding-right: 2rem;
 }
 
 .video-container {
