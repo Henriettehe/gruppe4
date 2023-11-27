@@ -28,7 +28,7 @@ body {
 .fade-in-text {
     font-size: 150px;
     opacity: 0;
-    animation: fadeIn 2s forwards;
+    animation: fadeIn 6s forwards;
 }
 
 @keyframes fadeIn {
