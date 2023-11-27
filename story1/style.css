@@ -75,7 +75,6 @@ h2 .scroll-text{ /* Endre på størrelsen, vil ikke ha alle lik padding. Kun de 
 
 h2{
     display: flex;
-    align-self: center;
 }
 
 .text-box{
@@ -161,6 +160,11 @@ h2{
     font-size: calc(2rem - 2px);
     display: flex;
     flex-direction: column;
+    padding: 4rem;
+}
+
+#mychart{
+   size: 50rem;
 }
 
 .text-box{
@@ -215,9 +219,7 @@ h2{
     h2{
         display: flex;
         flex-wrap: wrap;
-        margin: 0;
         padding: 0;
-        margin-right: 1rem;
     }
 
     header {
@@ -239,7 +241,6 @@ h2{
     #mychart{
         padding: 0rem;
         max-width: 95vw;
-        padding-left: 1.5rem;
     }
 
     #barChart{
@@ -248,9 +249,11 @@ h2{
         padding-right: 9.5rem;
         }
 
-    #mychart:hover{
-        
-    }
+        #skipToChart{
+            max-width: 90vh;
+            padding-right: 9.5rem;
+            }
+
 
     .text-box{
         padding: 8vh;
