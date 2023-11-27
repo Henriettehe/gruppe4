@@ -26,9 +26,9 @@ body {
 }
 
 .fade-in-text {
-    font-family: Arial;
     font-size: 150px;
-    animation: fadeIn 2s;
+    opacity: 0;
+    animation: fadeIn 2s forwards;
 }
 
 @keyframes fadeIn {
