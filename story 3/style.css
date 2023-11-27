@@ -11,7 +11,7 @@ body {
   font-family: Helvetica, sans-serif;
 }
 
-head {
+.header {
     width: 100vw;
     height: 100vh;
     display: flex;
@@ -21,6 +21,8 @@ head {
     background-size: cover;
     background-position: center center;
     color: white;
+    text-align: center; /**/
+    font-family: Arial;
 }
 
 .fade-in-text {
@@ -72,6 +74,15 @@ h1 {
     width: 100%;
     max-width: 50rem;
     height: 40rem;
+}
+
+.map-info {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 300px;
+    padding: 10px;
+    box-shadow:;
 }
 /*Timeline css hjelp fra https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_timeline*/
 .timeline {
