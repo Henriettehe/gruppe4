@@ -46,6 +46,8 @@ h1 {
     min-height: 60vh;
     overflow: hidden;
     transition: image 1s;
+    display: flex;
+    flex-direction: column;
 }
 
 .scroll-text {
