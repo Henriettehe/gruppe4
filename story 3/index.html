@@ -15,14 +15,10 @@
         </script>
     </head>
     <body>
-     
+        <div class="fade-in-text">
+            <title>Discgolf: Den nye store OL sport?</title>
+        </div>
         <header>
-            <div class="header">
-                <div class="fade-in-text">
-                    Discgolf: Den nye store OL sport?
-                </div>
-            </div>
-           
             <h1>Hva er Discgolf og hvor populært er den egentlig?</h1>
         </header>
         <section class="scroll-container" id="introduction">
@@ -31,6 +27,7 @@
                     Så har for eksempel Norge og Danmark begge over 30% høyere rate i bygging av nye baner enn i USA, ifølge UDisc sin årlige statistikkpakke om discgolf.
                     Udisc er en app som er laget for discgolfere, der kan du finne veibeskrivelser til nesten alle baner i hele verden og du kan registrere scores fra rundene dine og få statistikker av de etterpå.
                     I år 2022, 19 millioner runder var registrert i appen, dette kan føles som en liten tall i hele verdens skala, men hvis du tenker når du første gang hørte om dette sport eller hvor mye du vet om denne sport, er kanskje 19 millioner satt i annen perspektiv nå.</p></div>
+
 
             <div class="scroll-text" style="background-image: url('')">
                 <p>Discgolf er veldig liknende som regelmessig til Golf, vi bruker samme type ordene, som birdie og bogey. Poenget er å få disc inne i en kurv med minst mulig kast. Men motsatt av golf har discgolf mye billigere utstyr og mesteparten av banene er gratis å spille i. Dette hvordan discgolf ser ut som
@@ -41,8 +38,18 @@
                 <p>På grunn av Covid-19, nå har Norge noen discgolf baner som har hoppet inn i mange topplister i verlden.</p>
             </div>
 
+
             <div class="most-popular">
                 <img src="img/worldsmostpopular.png" alt="illustration">
+            </div>
+
+
+            <div class="scroll-text" style="background-image:url('') ">
+                <h2>Spill muligheter i Østfold</h2>
+                <p>I Østfold finnes det muligheter for discgolf i alle nivåer allerede, fra amatør og nybeggynner baner i Sarpsborg til,
+                    pro nivå baner i Halden og Sarpsborg. Så alle fra høye idretts interesser til store familier som leter etter noe nytt til
+                    fritiden, discgolf er allerede en mulig sport i deres område nå.
+                </p>
             </div>
            
             <div id="map"></div>
@@ -68,73 +75,77 @@
             </div>
             <div class="container left">
                 <div class="content">
-                    <h2>1975</h2>
-                    <p>Ed "Steady Ed" Hadrick</p>
+                    <h2>1983</h2>
+                    <p>Den første Pro discgolf Tour startet i USA, dette var også den eneste måte å
+                        kvalifisere til VM i discgolf denne tid.
+                    </p>
                 </div>
             </div>
             <div class="container right">
                 <div class="content">
-                    <h2>1979</h2>
-                    <p>Robert Tjernstad</p>
+                    <h2>1998</h2>
+                    <p>PDGA starter den første rating system i discgolf, dette er veldig likk til en vanlig ranking system
+                        til å se hvem er de beste i verlden i dette sport.
+                    </p>
                 </div>
             </div>
             <div class="container left">
                 <div class="content">
                         <h2>2021</h2>
-                        <p>Professionall discgolf association treffes 200 tusen aktive turnerings spillere</p>
+                        <p>Professionall discgolf association treffes 200 000 aktive turnerings spillere og samtidig tallene med de
+                            som spiller uoffisielle og bare for moro har økt minst 4 ganger høyere en de aktiv spiller tall er.
+                        </p>
                 </div>
             </div>
             <div class="container right">
                 <div class="content">
-                    <h2>1979</h2>
-                    <p>Robert Tjernstad</p>
+                    <h2>2028</h2>
+                    <p>PDGA har søkt for en plass som en ny sport i sommer OL i Los Angeles.</p>
                 </div>
             </div>
         </div>
-        </section> 
+        <div class="scroll-text" style="text">
+            <h2>Skal vi møtes på banen en dag?</h2>
+            <p>På grunn av hvor fort den sporten vokses nå, det er mulig at vi møter hverandre på banen. Spille muligheter kommer opp
+                mer og mer hele tiden og hvem vet hvis Discgolf er på storskjermer i alle hjemmer i 2028 på de OL scenene. Kanskje da kan disse land spesifikke tallene fra 2022 ser helt annerledes ut.
+            </p>
+            <div class="top-countries">
+                <img src="img/Top countries.png" alt="illustration2">
+            </div>
+        </div>
+        </section>
         <script>
             var map = L.map('map').setView([59.1279455, 11.3438203], 12);
+
 
             L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
                 maxZoom: 19,
                 attribution:' <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
             }).addTo(map);
 
-            var redIcon = new L.Icon ({
-                iconUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/images/marker-icon-red.png',
-                    iconSize: [25, 41],
-                    iconAnchor: [12, 41],
-                    popupAnchor: [1,-34],
-                    tooltipAnchor: [16, -28],
-                    shadowSize: [41, 41]
-            });
 
-            var blueIcon = new L.Icon ({
-                iconUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/images/marker-icon.png',
-                    iconSize: [25, 41],
-                    iconAnchor: [12, 41],
-                    popupAnchor: [1,-34],
-                    tooltipAnchor: [16, -28],
-                    shadowSize: [41, 41]
-            })
-
-            var østgaardskogen = L.marker([59.1279455, 11.3438203], {icon: blueIcon}).addTo(map);
+            var østgaardskogen = L.marker([59.1279455, 11.3438203],).addTo(map);
             østgaardskogen.bindTooltip("Østgaardsskogen Discgolfbane").openTooltip();
             østgaardskogen.bindPopup("<h2>Østgaardsskogen Discgolfbane</h2><p>Professionell nivå discgolfbane i Halden</p>").openPopup();
 
-            var sandbakken = L.marker([59.2487362, 11.1711782], {icon: redIcon}).addTo(map);
+
+            var sandbakken = L.marker([59.2487362, 11.1711782],).addTo(map);
             sandbakken.bindTooltip("Sandbakken Skolebane").openTooltip();
             sandbakken.bindPopup("<h2>Sandbakken Skolebane</h2><p>Nybegynner nivå discgolfbane i Sandbakken, Sarpsborg</p>").openPopup();
 
-            var glenshølen = L.marker([59.2880908, 11.1161077], {icon: redIcon}).addTo(map);
+
+            var glenshølen = L.marker([59.2880908, 11.1161077],).addTo(map);
             glenshølen.bindTooltip("Glenshølen DiscgolfPark").openTooltip();
             glenshølen.bindPopup("<h2>Glenshølen DiscgolfPark</h2><p>Nybegynner og amatør nivå Discgolfbane i Sarpsborg</p>").openPopup();
 
-            var øya = L.marker([59.3033402, 11.1485354], {icon: blueIcon}).addTo(map);
+
+            var øya = L.marker([59.3033402, 11.1485354],).addTo(map);
             øya.bindTooltip("Øya DiscgolfPark").openTooltip();
             øya.bindPopup("<h2>Øya DiscgolfPark</h2><p>Professionell nivå discgolf bane i Sarpsborg</p>").openPopup();
             //Kilder som var brukt med kart, Marius sin tutorial for map_basics og leafletjs.com
             map.scrollWheelZoom.disable(); //Nå er zoom disabled i kart mens scrolling, Måtte bruk hjelp fra: https://stackoverflow.com/questions/43904358/leaflet-minimap-scrollwheel-zoom-disable
+
+
 
 
         </script>
