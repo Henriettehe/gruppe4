@@ -48,6 +48,14 @@ a{
     text-decoration: none;
 }
 
+a{
+    text-decoration: none;
+  }
+
+  a:hover, a:focus{
+    text-decoration: underline;
+  }
+
 .scroll-container{
     width: 100vw;
     min-height: 60vh;
@@ -67,6 +75,7 @@ h2 .scroll-text{ /* Endre på størrelsen, vil ikke ha alle lik padding. Kun de 
 
 h2{
     display: flex;
+    align-self: center;
 }
 
 .text-box{
@@ -81,7 +90,7 @@ h2{
     max-width: 50rem;
     padding: 5rem;
     color: #000000;
-    font-size: large;
+    font-size: 30px;
 }
 
 .scroll-text-flag{
@@ -208,6 +217,7 @@ h2{
         flex-wrap: wrap;
         margin: 0;
         padding: 0;
+        margin-right: 1rem;
     }
 
     header {
@@ -228,11 +238,18 @@ h2{
 
     #mychart{
         padding: 0rem;
-        margin-right: .5rem;
+        max-width: 95vw;
+        padding-left: 1.5rem;
     }
 
+    #barChart{
+        padding: 0rem;
+        max-width: 90vh;
+        padding-right: 9.5rem;
+        }
+
     #mychart:hover{
-        /* width: 400vh; */ 
+        
     }
 
     .text-box{
