@@ -95,15 +95,7 @@ h1 {
     height: 40rem;
     align-self: center;
 }
-
-.map-info {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 300px;
-    padding: 10px;
-    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.); 
-}
+ 
 /*Timeline css hjelp fra https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_timeline*/
 .timeline {
     position: relative;
