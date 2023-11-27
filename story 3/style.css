@@ -51,10 +51,12 @@ h1 {
 }
 
 .scroll-text {
-    margin: 50vh auto;
-    max-width: 50rem;
+    margin: 30vh auto;
     padding: 1 rem;
-    color: whitesmoke;
+    color: white;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 .video-container {
@@ -88,6 +90,7 @@ h1 {
     width: 100%;
     max-width: 50rem;
     height: 40rem;
+    align-self: center;
 }
 
 .map-info {
@@ -207,4 +210,13 @@ h1 {
     .right {
         left:0%;
     }
+
+    .most-popular img {
+        max-width: 60vh;
+    }
+
+    .scroll-text{
+        margin: 0;
+        padding: 0;
+}    
 }
