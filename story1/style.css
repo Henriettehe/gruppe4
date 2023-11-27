@@ -48,6 +48,14 @@ a{
     text-decoration: none;
 }
 
+a{
+    text-decoration: none;
+  }
+
+  a:hover, a:focus{
+    text-decoration: underline;
+  }
+
 .scroll-container{
     width: 100vw;
     min-height: 60vh;
@@ -81,7 +89,7 @@ h2{
     max-width: 50rem;
     padding: 5rem;
     color: #000000;
-    font-size: large;
+    font-size: 30px;
 }
 
 .scroll-text-flag{
@@ -152,6 +160,11 @@ h2{
     font-size: calc(2rem - 2px);
     display: flex;
     flex-direction: column;
+    padding: 4rem;
+}
+
+#mychart{
+   size: 50rem;
 }
 
 .text-box{
@@ -206,7 +219,6 @@ h2{
     h2{
         display: flex;
         flex-wrap: wrap;
-        margin: 0;
         padding: 0;
     }
 
@@ -228,12 +240,20 @@ h2{
 
     #mychart{
         padding: 0rem;
-        margin-right: .5rem;
+        max-width: 95vw;
     }
 
-    #mychart:hover{
-        /* width: 400vh; */ 
-    }
+    #barChart{
+        padding: 0rem;
+        max-width: 90vh;
+        padding-right: 9.5rem;
+        }
+
+        #skipToChart{
+            max-width: 90vh;
+            padding-right: 9.5rem;
+            }
+
 
     .text-box{
         padding: 8vh;

@@ -49,6 +49,14 @@ p {
     padding: 1rem;
     margin: 70vh auto;
   }
+
+  a{
+    text-decoration: none;
+  }
+
+  a:hover, a:focus{
+    text-decoration: underline;
+  }
   
 
 #hatt {
@@ -59,7 +67,6 @@ p {
 
 /* Et forsøk på å få text og bilde ved siden av hverandre. Snakker til de ulike klassene i indexen */
 .bilde-and-text {
-
   max-width: 100%;
 }
 
@@ -86,20 +93,19 @@ p {
     align-items: center;
 }
 
+
 /* Justert bilde fra forskningen */ 
 .cvd {
-    margin-right: 20px;
     padding: 1rem;
-    max-width: 20rem;
+    max-width: 30rem;
+    margin: 2rem auto;
 }
 
 .graftext {
-    display: flex;
     margin-top: 0;
 }
 
 .bilde-and-text p {
-    display: flex;
     margin-top: 0;
 }
 
@@ -150,7 +156,7 @@ img.right {
 
 /* Oppdatert bildeverdien, slik at den ikke blir så stor og blir på siden av paragrafen */
 img.ekstra{
-    max-width: 116vh;
+  max-width: 30rem;
 }
 .stone {
   transition-delay: 1s;
@@ -210,7 +216,7 @@ img.ekstra{
 
 
 .cvd {
-  width: 60%; 
+  width: 50%; 
   max-width: 100%; 
 }
 
