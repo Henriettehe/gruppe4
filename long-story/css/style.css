@@ -10,7 +10,7 @@
     text-align: center;
     position: absolute;
     left: 50%;
-    top: 80%;
+    top: 60%;
     transform: translate(-50%, -50%);
     white-space: nowrap;
   }
@@ -196,7 +196,6 @@ img.right {
   }
 
   #myVideo{
-    position: fixed;
     z-index: -1;
     bottom: -371px;
     width: 100%;
