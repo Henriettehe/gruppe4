@@ -16,7 +16,7 @@
         </script>
     </head>
     <body>
-
+        <section class="scroll-container">
         <header>
             <div class="header">
                 <!--Fade in tittel hjelp fra chatGPT-->
@@ -27,28 +27,26 @@
 
             <h1>Hva er fenomenet Discgolf og hvor populært er den egentlig?</h1>
         </header>
-        <section class="scroll-container" id="introduction">
-            <div class="scroll-text" style="background-image: url('')">
+            <div class="scroll-text">
                 <p>Discgolf er noen av de raskest voksende sportene i hele Europa, uansett at det originale morsland til dette sporten er USA og den er veldig populært der fortsatt.
                     Så har for eksempel Norge og Danmark begge over 30% høyere rate i bygging av nye baner enn i USA, ifølge UDisc sin årlige statistikkpakke om discgolf.
                     Udisc er en app som er laget for discgolfere, der kan du finne veibeskrivelser til nesten alle baner i hele verden og du kan registrere scores fra rundene dine og få statistikker av de etterpå.
                     I år 2022, 19 millioner runder var registrert i appen, dette kan føles som en liten tall i hele verdens skala, men hvis du tenker når du første gang hørte om dette sport eller hvor mye du vet om denne sport, er kanskje 19 millioner satt i annen perspektiv nå.</p></div>
 
 
-            <div class="scroll-text" style="background-image: url('')">
+            <div class="scroll-text">
                 <p>Discgolf er veldig liknende som regelmessig til Golf, vi bruker samme type ordene, som birdie og bogey. Poenget er å få disc inne i en kurv med minst mulig kast. Men motsatt av golf har discgolf mye billigere utstyr og mesteparten av banene er gratis å spille i. Dette hvordan discgolf ser ut som
                 </p>
                 <!-- Video Container -->
             <div class="video-container">
                 <video autoplay muted loop class="section-video">
                     <source src="./vid/VID_20230623_173325.mp4" type="video/mp4">
- 
                 </video>
             </div>
             <!--video enda-->
 
             </div>
-            <div class="scroll-text" style="background-image: url('')">
+            <div class="scroll-text">
                 <h2>Sporten fikk en kjempe stor boost under Covid-19, siden den er spilt utendørs og er lett å holde god avstand till andre folk</h2>
                 <p>På grunn av Covid-19, nå har Norge noen discgolf baner som har hoppet inn i mange topplister i verlden.</p>
             </div>
@@ -59,7 +57,7 @@
             </div>
 
 
-            <div class="scroll-text" style="background-image:url('') ">
+            <div class="scroll-text">
                 <h2>Spill muligheter i Østfold</h2>
                 <p>I Østfold finnes det muligheter for discgolf i alle nivåer allerede, fra amatør og nybeggynner baner i Sarpsborg til,
                     pro nivå baner i Halden og Sarpsborg. Så alle fra høye idretts interesser til store familier som leter etter noe nytt til
@@ -69,8 +67,8 @@
            
             <div id="map"></div>
             <!--timeline template og hjelp har jeg fått fra: https://www.w3schools.com/howto/howto_css_timeline.asp-->
-        <div class="timeline">
             <h2 style="display: flex; font-size: 2rem; align-items: center; padding: 2 auto; color: white; flex-direction: column;">Historien til Discgolf</h2>
+            <div class="timeline">
                 <div class="container left">
                     <div class="content">
                         <h2>1975</h2>
@@ -160,10 +158,6 @@
             øya.bindPopup("<h2>Øya DiscgolfPark</h2><p>Professionell nivå discgolf bane i Sarpsborg</p>").openPopup();
             //Kilder som var brukt med kart, Marius sin tutorial for map_basics og leafletjs.com
             map.scrollWheelZoom.disable(); //Nå er zoom disabled i kart mens scrolling, Måtte bruk hjelp fra: https://stackoverflow.com/questions/43904358/leaflet-minimap-scrollwheel-zoom-disable
-
-
-
-
         </script>
     </body>
 </html>
